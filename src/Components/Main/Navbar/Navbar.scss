@@ -1,0 +1,921 @@
+@import '../../../Varibless/Varibles.scss';
+@import '../../../Mixins/Mixin.scss';
+
+.navbar {
+  background: #fff;
+  width: 100%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  position: fixed; // ✅ doim tepada turadi
+  top: 0;
+  left: 0;
+  z-index: 9999; // yuqorida ko‘rinadi
+  transition: all 0.3s ease-in-out;
+/* ===========================
+   📱 MODAL MENU (for mobile)
+=========================== */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 70%;
+  height: 100vh;
+  background: var(--gray);
+  z-index: 9998;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 80px 25px 40px;
+  transform: translateY(-100%);
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+  overflow-y: auto;
+  box-shadow: 0 10px 30px var(--blackk);
+
+
+
+  &.active {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .close-modal{
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 20px;
+    color: var(--btn-bg);
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    transition: all 0.3s ease-in-out;
+
+    &:hover{
+      transform:scale(1.3) rotate(360deg);
+      color: var(--reting-color);
+    }
+  }
+
+  /* --- Navbar links --- */
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-bottom: 30px;
+
+    a {
+      @include font(600, 18, 1.4, var(--text-color));
+      text-decoration: none;
+      padding: 10px 15px;
+      border-radius: 8px;
+      background-color: var(--btn-bg);
+      transition: 0.3s;
+
+      &:hover {
+        background-color: var(--btn-hover-bg);
+        color: var(--btn-bg);
+      }
+
+      &.active {
+        background-color: var(--yellow);
+        color: var(--btn-bg);
+      }
+    }
+  }
+
+  /* --- Nav bottom --- */
+  .nav__bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    .nav__bottom-selects {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+
+      button {
+        background: none;
+        border: 1px solid var(--text-color);
+        border-radius: 6px;
+        padding: 10px 15px;
+        text-align: left;
+        font-size: 16px;
+        font-weight: 600;
+        color: var(--text-color);
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        transition: 0.3s;
+
+        &:hover {
+          background-color: rgba(202, 1, 0, 0.1);
+          color: var(--btn-bg);
+        }
+
+        i {
+          font-size: 13px;
+        }
+      }
+    }
+
+    .icons {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding-top: 15px;
+      border-top: 1px solid #eee;
+
+      i {
+        font-size: 22px;
+        cursor: pointer;
+        transition: 0.3s;
+
+        &:hover {
+          color: var(--btn-bg);
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+
+  /* --- Scrollbar --- */
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: var(--btn-bg);
+    border-radius: 5px;
+  }
+
+  /* --- Close Animation for UX --- */
+  @keyframes slideIn {
+    from {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  .user-info-navbar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+
+  .user-name {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--text-color);
+    font-size: 14px;
+    font-weight: 600;
+
+    i {
+      font-size: 20px;
+      color: var(--btn-bg);
+      transition: all 0.3s ease;
+
+      &:hover {
+        color: var(--btn-hover-bg);
+        transform: scale(1.1);
+      }
+    }
+
+    span {
+      max-width: 150px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+
+  .logout-icon-btn {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 95, 95, 0.3);
+    background: transparent;
+    color: #ff5f5f;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    font-size: 14px;
+
+    i {
+      pointer-events: none; // fa-icon bosilganda button ishlaydi
+    }
+
+    &:hover {
+      background: rgba(255, 95, 95, 0.1);
+      border-color: #ff5f5f;
+      transform: rotate(90deg);
+    }
+
+    &:active {
+      transform: rotate(90deg) scale(0.95);
+    }
+  }
+}
+}
+
+/* ===========================
+   🌐 Responsive adjustments
+=========================== */
+
+/* --- 769px va past ekranlar --- */
+@media (max-width: 769px) {
+  .modal {
+    padding: 70px 20px;
+
+    .nav-links a {
+      font-size: 16px;
+    }
+
+    .nav__bottom {
+      gap: 20px;
+
+      .nav__bottom-selects button {
+        font-size: 15px;
+        padding: 8px 12px;
+      }
+
+      .icons {
+        i {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+/* --- 447px dan kichik (mobil) --- */
+@media (max-width: 447px) {
+  .modal {
+    padding: 60px 15px;
+
+    .nav-links a {
+      font-size: 15px;
+      padding: 8px 12px;
+    }
+
+    .nav__bottom {
+      .nav__bottom-selects button {
+        font-size: 14px;
+        padding: 8px 10px;
+      }
+
+      .icons {
+        i {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+
+  .container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    /* =======================
+       NAV TOP
+    ======================= */
+    .nav__top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 0;
+
+      .fa-bars {
+        @include font(600, 22, 1.3, var(--text-color));
+        cursor: pointer;
+        transition: 0.3s;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+
+      .logo {
+        width: 180px;
+        cursor: pointer;
+        transition: 0.3s;
+
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
+
+      .line {
+        height: 35px;
+        width: 2px;
+        background: var(--gray);
+      }
+
+      .year {
+        width: 180px;
+        @include font(700, 16, 1.3, var(--text-color));
+        cursor: pointer;
+
+        span {
+          color: var(--btn-bg);
+        }
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 20px;
+
+        a {
+          @include font(500, 16, 1.3, var(--text-color));
+          text-decoration: none;
+          cursor: pointer;
+          transition: 0.3s;
+          padding: 6px 12px;
+          border-radius: 6px;
+
+          &.active {
+            color: var(--btn-bg);
+            background-color: rgba(0, 0, 0, 0.05);
+          }
+
+          &:hover {
+            color: var(--btn-bg);
+          }
+        }
+      }
+
+      .tell {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+
+        .fa-phone {
+          font-size: 18px;
+          background-color: var(--btn-bg);
+          color: var(--btn-color);
+          border-radius: 50%;
+          width: 38px;
+          height: 38px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+          transition: 0.3s;
+
+          &:hover {
+            filter: brightness(90%);
+          }
+        }
+
+        .number {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+
+          .number1 {
+            @include font(600, 16, 1.3, var(--text-color));
+          }
+
+          .number2 {
+            @include font(500, 13, 1.3, var(--text-color));
+          }
+        }
+
+        .nav__btn {
+          background-color: var(--btn-bg);
+          color: var(--btn-color);
+          border: none;
+          padding: 10px 15px;
+          border-radius: 8px;
+          cursor: pointer;
+          @include font(600, 15, 1.3, var(--btn-color));
+          transition: 0.3s;
+
+          &:hover {
+            filter: brightness(90%);
+          }
+        }
+        .tell__search{
+display: none;
+      .fa-magnifying-glass{
+font-size: 20px;      }    
+        }
+
+        .user-info-navbar {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+          margin-left: 15px;
+          padding-left: 15px;
+          border-left: 1px solid rgba(0, 0, 0, 0.1);
+
+          .user-name {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--text-color);
+            font-size: 14px;
+            font-weight: 600;
+
+            i {
+              font-size: 20px;
+              color: var(--btn-bg);
+            }
+
+            span {
+              max-width: 150px;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+            }
+          }
+
+          .logout-icon-btn {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            border: 2px solid rgba(255, 95, 95, 0.3);
+            background: transparent;
+            color: #ff5f5f;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            font-size: 14px;
+
+            &:hover {
+              background: rgba(255, 95, 95, 0.1);
+              border-color: #ff5f5f;
+              transform: rotate(90deg);
+            }
+
+            &:active {
+              transform: rotate(90deg) scale(0.95);
+            }
+          }
+        }
+      }
+    }
+
+    /* =======================
+       NAV BOTTOM
+    ======================= */
+    .nav__bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 13px 0;
+      border-top: 2px solid var(--gray);
+      position: relative;
+
+      .nav__bottom-selects {
+        display: flex;
+        gap: 30px;
+
+        button {
+          background: none;
+          border: none;
+          font-size: 16px;
+          font-weight: 600;
+          color: var(--text-color);
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          transition: 0.3s;
+
+          &:hover {
+            color: var(--btn-bg);
+          }
+
+          i {
+            font-size: 13px;
+          }
+        }
+      }
+
+      .icons {
+        display: flex;
+        gap: 18px;
+
+        i {
+          font-size: 22px;
+          cursor: pointer;
+          transition: 0.3s;
+
+          &:hover {
+            color: var(--btn-bg);
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+  }
+}
+
+.dropdown-modal {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  margin-top: 10px;
+  border-top: 2px solid var(--btn-bg);
+  padding: 30px 40px;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.3s ease forwards;
+
+  .modal-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--btn-bg);
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+
+  .card-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 25px;
+
+    .card {
+      flex: 1 1 calc(33.333% - 25px);
+      background-color: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid #e6e6e6;
+      box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+      transition: all 0.3s ease;
+      text-align: center;
+      padding-bottom: 15px;
+
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+      }
+
+      img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+
+      .card-title {
+        font-size: 18px;
+        font-weight: 600;
+        margin: 10px 0 5px;
+        color: var(--text-color);
+      }
+
+      .card-description {
+        font-size: 14px;
+        color: var(--gray);
+        margin-bottom: 10px;
+      }
+
+      .buy-btn {
+        background-color: var(--btn-bg);
+        color: var(--btn-color);
+        border: none;
+        padding: 8px 16px;
+        border-radius: 6px;
+        cursor: pointer;
+        font-weight: 600;
+        transition: 0.3s;
+        font-size: 15px;
+
+        &:hover {
+          filter: brightness(90%);
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .card-grid .card {
+      flex: 1 1 calc(50% - 20px);
+    }
+  }
+
+  @media (max-width: 600px) {
+    padding: 20px;
+    .card-grid .card {
+      flex: 1 1 100%;
+    }
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
+/* --- 1200px dan kichik ekranlar --- */
+@media (max-width: 1280px) {
+  .navbar {
+    .container {
+      .nav__top {
+        .nav-links {
+          gap: 15px;
+
+          a {
+            font-size: 15px;
+            padding: 5px 10px;
+          }
+        }
+
+        .year {display: none;
+          width: 150px;
+          font-size: 15px;
+        }
+
+        .tell {
+          .number1 {
+            display: none;
+            font-size: 15px;
+          }
+          .number2 {
+            display: none;
+            font-size: 12px;
+          }
+          .nav__btn {
+            padding: 8px 12px;
+            font-size: 14px;
+          }
+        }
+      }
+
+      .nav__bottom {
+        .nav__bottom-selects {
+          gap: 20px;
+          button {
+            font-size: 15px;
+          }
+        }
+
+        .icons {
+          gap: 15px;
+          i {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* --- 990px dan kichik ekranlar --- */
+@media (max-width: 990px) {
+  .navbar {
+    .container {
+      .nav__top {
+        padding: 12px 0;
+
+        .nav-links {
+          display: none; // ✅ menyu yashiriladi
+        }
+
+        .fa-bars {
+          display: block; // ✅ burger menyu ko‘rinadi
+        }
+
+        .logo {
+          width: 150px;
+        }
+        .line{
+          display: none;
+        }
+
+        .year {
+          display: none; // joy tejash uchun
+        }
+
+        .tell {
+          .number {
+            display:flex; // faqat telefon ikonka qoladi
+          }
+          .nav__btn {
+            display: flex; // tugma yashirinadi
+          }
+        }
+      }
+
+      .nav__bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+
+        .nav__bottom-selects {
+          flex-wrap: wrap;
+          gap: 15px;
+
+          button {
+            font-size: 14px;
+          }
+        }
+
+        .icons {
+          align-self: flex-end;
+          margin-top: 10px;
+          i {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  .dropdown-modal {
+    padding: 25px;
+    .card-grid .card {
+      flex: 1 1 calc(50% - 15px);
+    }
+  }
+}
+
+
+
+
+
+/* --- 769px dan kichik ekranlar (planshet) --- */
+@media (max-width: 769px) {
+  .navbar {
+    .container {
+      .nav__top {
+        justify-content: space-between;
+
+        .fa-bars {
+          font-size: 18px;
+        }
+
+        .logo {
+          width: 150px;
+        }
+        .line{
+          display: none;
+        }
+
+        .tell {
+          .fa-phone {
+            width: 32px;
+            height: 32px;
+            font-size: 16px;
+          }
+              .number {
+            display:none; // faqat telefon ikonka qoladi
+          }
+    
+            .nav__btn {
+            display: flex; // tugma yashirinadi
+          }
+          .tell__search{
+            display: flex;
+          }
+        }
+      }
+
+      .nav__bottom {
+        display: none; // pastki navbar yashiriladi (mobil menyu uchun)
+      }
+    }
+  }
+
+  .dropdown-modal {
+    padding: 15px;
+    gap: 15px;
+
+    .modal-title {
+      font-size: 18px;
+    }
+
+    .card-grid {
+      gap: 15px;
+
+      .card {
+        flex: 1 1 100%;
+        img {
+          height: 160px;
+        }
+        .card-title {
+          font-size: 15px;
+        }
+        .buy-btn {
+          font-size: 14px;
+          padding: 6px 12px;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+/* --- 447px dan kichik ekranlar (telefon) --- */
+@media (max-width: 550px) {
+  .navbar {
+    .container {
+      .nav__top {
+        justify-content: space-between;
+
+        .fa-bars {
+          font-size: 18px;
+        }
+
+        .logo {
+          width: 150px;
+        }
+        .line{
+          display: none;
+        }
+
+        .tell {
+          .fa-phone {
+            width: 32px;
+            height: 32px;
+            font-size: 16px;
+          }
+            .nav__btn {
+            display: none; // tugma yashirinadi
+          }
+          .tell__search{
+            display: flex;
+          }
+        }
+      }
+
+      .nav__bottom {
+        display: none; // pastki navbar yashiriladi (mobil menyu uchun)
+      }
+    }
+  }
+
+  .dropdown-modal {
+    padding: 15px;
+    gap: 15px;
+
+    .modal-title {
+      font-size: 18px;
+    }
+
+    .card-grid {
+      gap: 15px;
+
+      .card {
+        flex: 1 1 100%;
+        img {
+          height: 160px;
+        }
+        .card-title {
+          font-size: 15px;
+        }
+        .buy-btn {
+          font-size: 14px;
+          padding: 6px 12px;
+        }
+      }
+    }
+  }
+}

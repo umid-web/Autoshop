@@ -1,0 +1,49 @@
+@import "../../Mixins/Mixin.scss";
+@import "../../Varibless/Varibles.scss";
+
+.auto-probeg {
+  background-color: var(--extra-color);
+  padding: 100px 0 0px;
+  overflow: hidden;
+
+  .container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .title {
+    display: inline-block;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    @include font(700, 36, 1.2, var(--text-color));
+  }
+
+  /* 🔹 Responsiv dizayn */
+
+  @media (max-width: 1200px) {
+    padding: 120px 0 0;
+
+    .title {
+      font-size: 26px;
+    }
+  }
+
+
+  @media (max-width: 768px) {
+    padding: 40px 0 0;
+
+    .title {
+      font-size: 26px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    padding: 40px 0 0px;
+
+    .title {
+      font-size: 24px;
+    }
+  }
+}

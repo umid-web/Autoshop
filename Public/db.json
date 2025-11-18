@@ -1,0 +1,1413 @@
+{
+    "cars": [
+        {
+            "id": 1,
+            "make": "Audi",
+"emblems": "src/Images/Svg/Frame 16.svg"
+        },
+        {
+            "id": 2,
+            "make": "BMW",
+            "emblems": "src/Images/Svg/Frame 16.svg"
+        },
+        {
+            "id": 3,
+            "make": "Mercedes",
+            "emblems": "src/Images/Svg/Frame 16.svg"
+        },
+        {
+            "id": 4,
+            "make": "Toyota",
+            "emblems": "src/Images/Svg/Frame 16.svg"
+        },
+        {
+            "id": 5,
+            "make": "Honda",
+            "emblems": "src/Images/Svg/Frame 16.svg"
+        },
+        {
+            "id": 6,
+            "make": "Ford",
+            "emblems": "src/Images/Svg/Frame 16.svg"
+        },
+        {
+            "id": 7,
+            "make": "Chevrolet",
+            "emblems": "src/Images/Svg/Frame 16.svg"
+        },
+        {
+            "id": 8,
+            "make": "Nissan",
+            "emblems": "src/Images/Svg/Frame 16.svg"
+        },
+        {
+            "id": 9,
+            "make": "Volkswagen",
+            "emblems": "src/Images/Svg/Frame 16.svg"
+        },
+        {
+            "id": 10,
+            "make": "Hyundai",
+            "emblems": "src/Images/Svg/Frame 16.svg"
+        },
+        {
+            "id": 11,
+            "make": "Kia",
+            "emblems": "src/Images/Svg/Frame 16.svg"
+        },
+        {
+            "id": 12,
+            "make": "Mazda",
+            "emblems": "src/Images/Svg/Frame 16.svg"
+        },
+        {
+            "id": 13,
+            "make": "Subaru",
+            "emblems": "src/Images/Svg/Frame 16.svg"
+        },
+        {
+            "id": 14,
+            "make": "Lexus",
+            "emblems": "src/Images/Svg/Frame 16.svg"
+        },
+        {
+            "id": 15,
+            "make": "Jeep",
+            "emblems": "src/Images/Svg/Frame 16.svg"
+        },
+        {
+            "id": 16,
+            "make": "Dodge",
+            "emblems": "src/Images/Svg/Frame 16.svg"
+        },
+        {
+            "id": 17,
+            "make": "Ram",
+            "emblems": "src/Images/Svg/Frame 16.svg"
+        },
+        {
+            "id": 18,
+            "make": "GMC",
+            "emblems": "src/Images/Svg/Frame 16.svg"
+        },
+        {
+            "id": 19,
+            "make": "Cadillac",
+            "emblems": "src/Images/Svg/Frame 16.svg"
+        },
+        {
+            "id": 20,
+            "make": "Buick",
+            "emblems": "src/Images/Svg/Frame 16.svg"
+        }
+
+
+    ],
+
+      "bodyTypes": [
+    { "id": 1, "name": "Седан", "value": "sedan" },
+    { "id": 2, "name": "Внедорожник", "value": "suv" },
+    { "id": 3, "name": "Хэтчбек", "value": "hatchback" },
+    { "id": 4, "name": "Купе", "value": "coupe" },
+    { "id": 5, "name": "Кабриолет", "value": "convertible" }
+  ],
+
+  "transmissions": [
+    { "id": 1, "name": "Автомат", "value": "automatic" },
+    { "id": 2, "name": "Механика", "value": "manual" },
+    { "id": 3, "name": "Робот", "value": "robotic" }
+  ],
+
+
+"swiper": [
+  { 
+    "id": 1, 
+    "title": "Car 1", 
+    "text": "Bu model zamonaviy dizayn va tejamkor dvigatel bilan ajralib turadi.", 
+    "img": "src/Images/Png/rio_new 1.png",
+    "img2": "src/Images/Png/myswiper.png",
+    "img3": "src/Images/Png/myswiper1.png"
+  },
+  { 
+    "id": 2, 
+    "title": "Car 2", 
+    "text": "Yuqori texnologiyalar bilan jihozlangan qulay salon va xavfsizlik tizimi mavjud.",
+    "img": "src/Images/Png/rio_new 1.png",
+    "img2": "src/Images/Png/myswiper.png",
+    "img3": "src/Images/Png/myswiper1.png"
+  },
+  { 
+    "id": 3, 
+    "title": "Car 3", 
+    "text": "Shahar va uzoq masofalarga moslashgan mukammal avtomobil.",
+    "img": "src/Images/Png/rio_new 1.png",
+    "img2": "src/Images/Png/myswiper.png",
+    "img3": "src/Images/Png/myswiper1.png"
+  },
+  { 
+    "id": 4, 
+    "title": "Car 4", 
+    "text": "Kuchli dvigatel va yo‘l sharoitlariga moslashuvchan suspenziya bilan jihozlangan.",
+    "img": "src/Images/Png/rio_new 1.png",
+    "img2": "src/Images/Png/myswiper.png",
+    "img3": "src/Images/Png/myswiper1.png"
+  },
+  { 
+    "id": 5, 
+    "title": "Car 5", 
+    "text": "Iqtisodiy yoqilg‘i sarfi va ekologik tozaligi bilan ajralib turadi.",
+    "img": "src/Images/Png/rio_new 1.png",
+    "img2": "src/Images/Png/myswiper.png",
+    "img3": "src/Images/Png/myswiper1.png"
+  },
+  { 
+    "id": 6, 
+    "title": "Car 6", 
+    "text": "Sport uslubidagi tashqi ko‘rinish va zamonaviy interyer dizayni bilan ajralib turadi.",
+    "img": "src/Images/Png/rio_new 1.png",
+    "img2": "src/Images/Png/myswiper.png",
+    "img3": "src/Images/Png/myswiper1.png"
+  }
+],
+
+
+
+
+
+
+    "cardData":[
+{
+    "id": 1,
+    "img": "src/Images/Png/nalicheCard.png",
+    "price": " 1 615 000 ₽ ",
+    "kreditPrice": " 115 000 ₽/мес. ",
+    "engine": "115 л.с.",
+    "fuel": "5.3 л/км",
+    "speed": "200 км/ч",
+    "second": "10,3 c."
+},
+{
+    "id": 2,
+    "img": "src/Images/Png/nalicheCard.png",
+    "price": " 1 715 000 ₽ ",
+    "kreditPrice": "  120 000 ₽/мес. ",
+    "engine": "120 л.с.",
+    "fuel": "5.5 л/км",
+    "speed": "189 км/ч",
+    "second": "10,5 c."
+},
+{
+    "id": 3,
+    "img": "src/Images/Png/nalicheCard.png",
+    "price": " 1 630 000 ₽ ",
+    "kreditPrice": "  130 000 ₽/мес. ",
+    "engine": "135 л.с.",
+    "fuel": "6 л/км",
+    "speed": "190 км/ч",
+    "second": "10 c."
+},
+{
+    "id": 4,
+    "img": "src/Images/Png/nalicheCard.png",
+    "price": " 1 815 000 ₽ ",
+    "kreditPrice": " 145 000 ₽/мес. ",
+    "engine": "125 л.с.",
+    "fuel": "4.8 л/км",
+    "speed": "220 км/ч",
+    "second": "9 c."
+},
+{
+    "id": 5,
+    "img": "src/Images/Png/nalicheCard.png",
+    "price": " 1 615 000 ₽ ",
+    "kreditPrice": "  123 000 ₽/мес. ",
+    "engine": "115 л.с.",   
+"fuel": "5.3 л/км",
+    "speed": "167 км/ч",
+    "second": "10,3 c."
+},
+
+{
+    "id": 6,
+    "img": "src/Images/Png/nalicheCard.png",
+    "price": " 2 315 000 ₽ ",
+    "kreditPrice": " 165 000 ₽/мес. ",
+    "engine": "115 л.с.",
+    "fuel": "5.8 л/км",
+    "speed": "240 км/ч",
+    "second": "9.1 c."
+}
+    ],
+
+
+
+    "swiperExtra":[
+           
+        { "id": 1, "title": "Подборка 1", "img": "src/Images/Png/car.jpg" },
+        { "id": 2, "title": "Подборка 2", "img": "src/Images/Png/myswiper1.png" },
+        { "id": 3, "title": "Подборка 3", "img": "src/Images/Png/myswiper1.png" },
+        { "id": 4, "title": "Подборка 4", "img": "src/Images/Png/car.jpg" },
+        { "id": 5, "title": "Подборка 5", "img": "src/Images/Png/myswiper1.png" },
+        { "id": 6, "title": "Подборка 6", "img": "src/Images/Png/car.jpg" }
+        ],
+
+
+
+
+
+
+         "believeBanks": [
+    {
+      "id": 1,
+      "site": "Сайт Отзовик",
+      "dealer": "Название автосалона",
+      "recommend": 90,
+      "rating": 4.5
+    },
+    {
+      "id": 2,
+      "site": "Auto.ru",
+      "dealer": "Premium Motors",
+      "recommend": 88,
+      "rating": 4.2
+    },
+    {
+      "id": 3,
+      "site": "CarBuyer",
+      "dealer": "DriveCity",
+      "recommend": 92,
+      "rating": 4.8
+    },
+    {
+      "id": 4,
+      "site": "Авто.уз",
+      "dealer": "UzAuto Trade",
+      "recommend": 87,
+      "rating": 4.3
+    },
+    {
+      "id": 5,
+      "site": "Auto.uz",
+      "dealer": "UzAuto Trade",
+      "recommend": 87,
+      "rating": 4.3
+    },
+    {
+      "id": 6,
+      "site": "Auto.uz",
+      "dealer": "UzAuto Trade",
+      "recommend": 87,
+      "rating": 4.3
+    },
+    {
+      "id": 7,
+      "site": "Auto.uz",
+      "dealer": "UzAuto Trade",
+      "recommend": 87,
+      "rating": 4.3
+    }
+  ],
+
+   "map": [
+    {
+      "id": 1,
+      "logo": "src/Images/Svg/yandex-maps-logo 1.svg",
+      "name": "Название автосалона",
+      "percent": "Рекомендуют 90%",
+      "rating": 4.5
+    },
+    {
+      "id": 2,
+      "logo": "src/Images/Svg/Google_Maps_Logo 2.svg",
+      "name": "Название автосалона",
+      "percent": "Рекомендуют 90%",
+      "rating": 3.7
+    }
+  ],
+  
+
+"comments": [
+  {
+    "id": 1,
+    "img": "src/Images/Png/Abstract Design.png",
+    "name": "Сергей Васильев",
+    "video": "https://www.youtube.com/shorts/ZUXKG3JFszc",
+    "text": "Я нахожусь в салоне ALTERA, всем советую, хороший коллектив, добрые люди, приветствуют, это не обман, вам гарантия 100 % точно, чисто от меня, приезжайте!"
+  },
+  {
+    "id": 2,
+    "img": "src/Images/Png/Abstract Design.png",
+    "name": "Иван Петров",
+    "video": "src/Images/Png/video_2025-10-11_22-27-12.mp4",
+    "text": "Хороший автосалон, обслуживание отличное. Рекомендую!"
+  },
+  {
+    "id": 3,
+    "img": "src/Images/Png/Abstract Design.png",
+    "name": "Алексей Смирнов",
+    "video": "",
+    "text": "Качественное обслуживание, вежливый персонал!"
+  }
+],
+"otzivi":[
+    {
+    "id": 1,
+    "img": "src/Images/Png/Abstract Design.png",
+    "name": "Сергей Васильев",
+    "video": "https://www.youtube.com/shorts/ZUXKG3JFszc",
+    "text": "Я нахожусь в салоне ALTERA, всем советую, хороший коллектив, добрые люди, приветствуют, это не обман, вам гарантия 100 % точно, чисто от меня, приезжайте!"
+  },
+  {
+    "id": 2,
+    "img": "src/Images/Png/Abstract Design.png",
+    "name": "Иван Петров",
+    "video": "src/Images/Png/video_2025-10-11_22-27-12.mp4",
+    "text": "Хороший автосалон, обслуживание отличное. Рекомендую!"
+  },
+  {
+    "id": 3,
+    "img": "src/Images/Png/Abstract Design.png",
+    "name": "Алексей Смирнов",
+    "video": "",
+    "text": "Качественное обслуживание, вежливый персонал!"
+  },
+    {
+    "id": 4,
+    "img": "src/Images/Png/Abstract Design.png",
+    "name": "Сергей Васильев",
+    "video": "https://www.youtube.com/shorts/ZUXKG3JFszc",
+    "text": "Я нахожусь в салоне ALTERA, всем советую, хороший коллектив, добрые люди, приветствуют, это не обман, вам гарантия 100 % точно, чисто от меня, приезжайте!"
+  },
+  {
+    "id": 5,
+    "img": "src/Images/Png/Abstract Design.png",
+    "name": "Иван Петров",
+    "video": "src/Images/Png/video_2025-10-11_22-27-12.mp4",
+    "text": "Хороший автосалон, обслуживание отличное. Рекомендую!"
+  },
+  {
+    "id": 6,
+    "img": "src/Images/Png/Abstract Design.png",
+    "name": "Алексей Смирнов",
+    "video": "",
+    "text": "Качественное обслуживание, вежливый персонал!"
+  }
+],
+
+  "contacts": {
+    "link": "Главная / Контакты",
+    "title": "Контакты",
+    "items": [
+      {
+        "icon": "fa-solid fa-phone",
+        "title": "Телефон",
+        "texts": ["+7 (800) 551-94-31", "+7 (495) 292-18-67"]
+      },
+      {
+        "icon": "fa-solid fa-location-dot",
+        "title": "Адрес",
+        "texts": ["Россия, Москва, 38КМ МКАД, 6Бс1", "GPS: 55.597068, 37.511805"]
+      },
+      {
+        "icon": "fa-solid fa-flag-checkered",
+        "title": "Как проехать",
+        "texts": [
+          "от МКАД (внутренняя сторона)",
+          "от МКАД (внешняя сторона)",
+          "из области, из центра"
+        ]
+      }
+    ]
+  },
+
+    "company": {
+    "title": "О компании",
+    "text": "Мы располагаем огромной торговой площадкой более 5000 квадратных метров, у нас в наличии не менее 200 автомобилей как отечественного, так и иностранного производства. В штате автосалона «Альтера» работают настоящие профессионалы, которые знают особенности каждого конкретного автомобиля.",
+    "images": [
+      "src/Images/Png/Compani.png",
+      "src/Images/Png/blogsw.png",
+      "src/Images/Png/Express.png",
+      "src/Images/Png/MedisineBg.png"
+    ]
+  },
+
+
+
+"Blogswaper": [
+  {
+    "id": "1",
+    "img": "src/Images/Png/blogsw.png",
+    "data": "10 октября",
+    "text": "Обзор новой Skoda Octavia: комфорт, технологии и надежность в одном кузове"
+  },
+  {
+    "id": "2",
+    "img": "src/Images/Png/blogsw.png",
+    "data": "12 октября",
+    "text": "Как выбрать идеальный семейный автомобиль: советы экспертов Skoda"
+  },
+  {
+    "id": "3",
+    "img": "src/Images/Png/blogsw.png",
+    "data": "16 октября",
+    "text": "Тест-драйв Skoda Kodiaq — сочетание мощности и элегантности"
+  },
+  {
+    "id": "4",
+    "img": "src/Images/Png/blogsw.png",
+    "data": "19 октября",
+    "text": "Преимущества полного привода 4x4 на автомобилях Skoda: стоит ли переплачивать?"
+  },
+  {
+    "id": "5",
+    "img": "src/Images/Png/blogsw.png",
+    "data": "22 октября",
+    "text": "Skoda Rapid против Octavia: какой автомобиль выбрать в 2025 году"
+  },
+  {
+    "id": "6",
+    "img": "src/Images/Png/blogsw.png",
+    "data": "25 октября",
+    "text": "10 причин, почему Skoda остается лидером среди европейских автомобилей"
+  }
+],
+
+"avtomobile": [
+  { "id": "1", "name": "Kia" },
+  { "id": "2", "name": "BMW" },
+  { "id": "3", "name": "Mercedes-Benz" },
+  { "id": "4", "name": "Audi" },
+  { "id": "5", "name": "Volkswagen" },
+  { "id": "6", "name": "Skoda" },
+  { "id": "7", "name": "Toyota" },
+  { "id": "8", "name": "Honda" },
+  { "id": "9", "name": "Mazda" },
+  { "id": "10", "name": "Mitsubishi" },
+  { "id": "11", "name": "Nissan" },
+  { "id": "12", "name": "Lexus" },
+  { "id": "13", "name": "Hyundai" },
+  { "id": "14", "name": "Chevrolet" },
+  { "id": "15", "name": "Ford" },
+  { "id": "16", "name": "Peugeot" },
+  { "id": "17", "name": "Renault" },
+  { "id": "18", "name": "Citroen" },
+  { "id": "19", "name": "Opel" },
+  { "id": "20", "name": "Volvo" },
+  { "id": "21", "name": "Jaguar" },
+  { "id": "22", "name": "Land Rover" },
+  { "id": "23", "name": "Porsche" },
+  { "id": "24", "name": "Ferrari" },
+  { "id": "25", "name": "Lamborghini" },
+  { "id": "26", "name": "Aston Martin" },
+  { "id": "27", "name": "Bentley" },
+  { "id": "28", "name": "Rolls-Royce" },
+  { "id": "29", "name": "Suzuki" },
+  { "id": "30", "name": "Subaru" },
+  { "id": "31", "name": "Infiniti" },
+  { "id": "32", "name": "Genesis" },
+  { "id": "33", "name": "Chery" },
+  { "id": "34", "name": "Geely" },
+  { "id": "35", "name": "Tesla" },
+  { "id": "36", "name": "BYD" }
+],
+
+"description": [
+  {
+    "id": 1,
+    "title": "Заголовок",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pulvinar auctor tellus, id volutpat dui dictum vitae. Sed ac mauris nisi. Maecenas quis sollicitudin dolor, eget molestie dolor. Vivamus sed magna euismod, iaculis eros vitae, vehicula justo. Ut id consequat risus, vitae accumsan ligula. Proin egestas odio sit amet laoreet vulputate. Suspendisse vitae vestibulum quam. Vivamus lectus justo, bibendum at laoreet vel, rhoncus nec sem. Phasellus at mollis magna, in bibendum massa. Praesent malesuada sit amet nibh ut vestibulum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla iaculis a orci sit amet iaculis. Nulla in magna posuere nunc pharetra faucibus. Phasellus id enim libero."
+  },
+{
+  "id":2,
+  "title": "Подзаголовок",
+  "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pulvinar auctor tellus, id volutpat dui dictum vitae. Sed ac mauris nisi. Maecenas quis sollicitudin dolor, eget molestie dolor. Vivamus sed magna euismod, iaculis eros vitae, vehicula justo. Ut id consequat risus, vitae accumsan ligula. Proin egestas odio sit amet laoreet vulputate. Suspendisse vitae vestibulum quam. Vivamus lectus justo, bibendum at laoreet vel, rhoncus nec sem. Phasellus at mollis magna, in bibendum massa. Praesent malesuada sit amet nibh ut vestibulum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla iaculis a orci sit amet iaculis. Nulla in magna posuere nunc pharetra faucibus. Phasellus id enim libero."
+},
+{
+  "id":3,
+  "title":"Подзаголовок",
+"text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pulvinar auctor tellus, id volutpat dui dictum vitae. Sed ac mauris nisi. Maecenas quis sollicitudin dolor, eget molestie dolor. Vivamus sed magna euismod, iaculis eros vitae, vehicula justo. Ut id consequat risus, vitae accumsan ligula. Proin egestas odio sit amet laoreet vulputate. Suspendisse vitae vestibulum quam. Vivamus lectus justo, bibendum at laoreet vel, rhoncus nec sem. Phasellus at mollis magna, in bibendum massa. Praesent malesuada sit amet nibh ut vestibulum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla iaculis a orci sit amet iaculis. Nulla in magna posuere nunc pharetra faucibus. Phasellus id enim libero."
+}
+
+],
+
+"programm": [
+  {
+    "id":"1",
+    "img":"src/Images/Png/program1.png",
+    "number": " от 0%",
+    "text": "Первоначальный взнос"
+  },
+    {
+    "id":"2",
+    "img":"src/Images/Png/program1.png",
+    "number": " 30 минут",
+    "text": "Ответ кредитных специалистов "
+  },
+    {
+    "id":"3",
+    "img":"src/Images/Png/program1.png",
+    "number": "от 1,9%",
+    "text": "Ставка по кредиту "
+  },
+    {
+    "id":"4",
+    "img":"src/Images/Png/program1.png",
+    "number": "98%",
+    "text": "Одобрение кредита"
+  }
+],
+
+ "trade_in": {
+    "title": "Программа Trade-in",
+    "discount": "Скидка от 120 000 ₽",
+    "brands": ["Toyota", "Hyundai", "Kia", "Chevrolet"],
+    "models": ["Camry", "Sonata", "Sportage", "Cobalt"],
+    "years": ["2020", "2021", "2022", "2023", "2024"],
+    "transmissions": ["Автомат", "Механика", "Вариатор"]
+  },
+
+
+  "future": [
+    {
+      "id": 1,
+      "marka": "Kia",
+      "model": "Comfort 1.4 100 л.с. 6MT 2WD",
+      "year": "2020",
+      "img": "src/Images/Png/myswiper.png",
+      "price_discount": "2 200 000 ₽",
+      "price_base": "2 500 000 ₽",
+      "monthly": "70 000 ₽/мес."
+    },
+    {
+      "id": 2,
+      "marka": "Hyundai",
+      "model": "Solaris 1.6 AT 2WD",
+      "year": "2021",
+      "img": "src/Images/Png/myswiper1.png",
+      "price_discount": "1 950 000 ₽",
+      "price_base": "2 200 000 ₽",
+      "monthly": "63 000 ₽/мес."
+    }
+  ],
+
+
+     "BuyCredit": [
+    {
+      "id": 1,
+      "title": "Купить в кредит",
+      "durationLabel": "Cрок кредита, месяцев",
+      "discountText": "Скидка 70 000 ₽",
+      "promoText": "Акция “Выгодный кредит” Скидка 30 000 ₽",
+      "placeholder": "Первоначальный взнос",
+      "cardImages": [
+        "src/Images/Png/Bank.png",
+        "src/Images/Png/Bank.png",
+        "src/Images/Png/Bank.png",
+        "src/Images/Png/Bank.png",
+        "src/Images/Png/Bank.png",
+        "src/Images/Png/Bank.png",
+        "src/Images/Png/Bank.png",
+        "src/Images/Png/Bank.png"
+      ]
+    }
+  ],
+
+
+    "Personal": {
+    "title": "Персональные данные",
+    "namePlaceholder": "Ваше имя",
+    "phonePlaceholder": "Номер телефона",
+    "selectLabel": "Выберите подарок",
+    "gifts": [
+      "Скидка 10% на первый взнос",
+      "Бесплатная диагностика авто",
+      "Полировка кузова в подарок",
+      "Замена масла бесплатно",
+      "Коврики в салон бесплатно",
+      "Бесплатная доставка авто",
+      "Техническое обслуживание 1 год бесплатно"
+    ],
+    "buttonText": "Получить лучшие условия",
+    "consentText": "Нажимая кнопку “Получить лучшие условия” Вы даете согласие на обработку своих персональных данных."
+  },
+
+
+
+    "buy_on_credit": {
+    "text": "Программа Trade-in",
+    "buttonText": "Добавить"
+  },
+
+      "buy_on_credit_trade_in": {
+    "text": "Программа Trade-in",
+    "buttonText": "Добавить",
+    "type": "checkbox",
+    "text2": "Скидка от 70 000 ₽"
+  },
+
+  
+
+   "avtokredit": [
+    {
+      "id": 1,
+      "img": "src/Images/Png/AvtoKredit.png",
+      "text": "40 кредитных программ на выбор"
+    },
+    {
+      "id": 2,
+      "img": "src/Images/Png/AvtoKredit.png",
+      "text": "Срок кредитования до 7 лет"
+    },
+    {
+      "id": 3,
+      "img": "src/Images/Png/AvtoKredit.png",
+      "text": "Размер кредита до 3 000 000 ₽ "
+    },
+    {
+      "id": 4,
+      "img": "src/Images/Png/AvtoKredit.png",
+      "text": "Досрочное погашение  без штрафа"
+    },
+    {
+      "id": 5,
+      "img": "src/Images/Png/AvtoKredit.png",
+      "text": "Первоначальный  взнос от 0%"
+    },
+    {
+      "id": 6,
+      "img": "src/Images/Png/AvtoKredit.png",
+      "text": "Ставка по кредиту от 1,9%"
+    },
+    {
+      "id": 7,
+      "img": "src/Images/Png/AvtoKredit.png",
+      "text": "Процент одобрения кредита 98%"
+    },
+    {
+      "id": 8,
+      "img": "src/Images/Png/AvtoKredit.png",
+      "text": "Ответ кредитных специалистов в течение 30 минут"
+    }
+  ],
+
+  "personal_data":[
+    {
+      "id": 1,
+      "img": "src/Images/Png/PersonalData.png",
+      "text": "Минимальный пакет документов два комплекта ключей, ПТС, СТС, и паспорт владельца"
+    },
+    {
+      "id": 2,
+      "img": "src/Images/Png/PersonalData2.png",
+      "text": "Доплатить  разницу в стоимости возможно как наличными, так и оформить выгодный автокредит"
+    },
+    {
+      "id": 3,
+      "img": "src/Images/Png/PersonalData3.png",
+      "text": "Экономия Вашего времени на поиске покупателя и т.д "
+    },
+    {
+      "id": 4,
+      "img": "src/Images/Png/PersonalData4.png",
+      "text": "Вы сразу можете уехать  на новом автомобиле не дожидаясь продажи старого "
+    },
+    {
+      "id": 5,
+      "img": "src/Images/Png/PersonalData5.png",
+      "text": "Отсутствие юридических и финансовых рисков "
+    },
+    {
+      "id": 6,
+      "img": "src/Images/Png/PersonalData6.png",
+      "text": "Оценка и диагностика авто производится бесплатно"
+    }
+  ],
+
+
+    "advantages-trade-in": [
+    {
+      "id": 1,
+      "img": "src/Images/Png/Adventages1.png",
+      "title": "Экономия вашего времени",
+      "text": "на поиски покупателя, договоренностях и т.д."
+    },
+    {
+      "id": 2,
+      "img": "src/Images/Png/Adventages2.png",
+      "title": "Минимальный пакет документов",
+      "text": " два комплекта ключей, ПТС, СТС и паспорт владельца"
+    },
+    {
+      "id": 3,
+      "img": "src/Images/Png/Adventages3.png",
+      "title": "Отсутствие рисков",
+      "text": "Юридических и финансовых "
+    },
+    {
+      "id": 4,
+      "img": "src/Images/Png/Adventages4.png",
+      "title": "Разные способы оплаты",
+      "text": "Доплатить разницу в стоимости возможно как наличными, так и оформить выгодный автокредит"
+    },
+    {
+      "id": 5,
+      "img": "src/Images/Png/Adventages5.png",
+      "title": "Удобство",
+      "text": "Вы сразу можете уехать на новом автомобиле, не дожидаясь продажи старого"
+    },
+    {
+      "id": 6,
+      "img": "src/Images/Png/Adventages6.png",
+      "title": "Бесплатные услуги",
+      "text": "Оценка и диагностика автомобиля производится бесплатно"
+    }
+  ],
+
+
+
+
+   "requirements": {
+   "conditions": [
+      { "id": 1, "icon": "fa-solid fa-circle-check", "text": "Взнос 0 ₽" },
+      { "id": 2, "icon": "fa-solid fa-circle-check", "text": "Срок кредита до 7 лет" },
+      { "id": 3, "icon": "fa-solid fa-circle-check", "text": "Госпрограмма первое авто" },
+      { "id": 4, "icon": "fa-solid fa-circle-check", "text": "Семейный автомобиль " },
+      { "id": 5, "icon": "fa-solid fa-circle-check", "text": "Автокредит для медицинских работников" },
+      { "id": 6, "icon": "fa-solid fa-circle-check", "text": "Скидка 60 000 на покупку нового авто" },
+      { "id": 7, "icon": "fa-solid fa-circle-check", "text": "10% скидки по Trade-in на покупку нового авто" },
+      { "id": 8, "icon": "fa-solid fa-circle-check", "text": "Более 30 банков партнеров" }
+    ],
+    "documents": [
+      { "id": 1, "icon": "fa-solid fa-circle-check", "text": "Паспорт" },
+      { "id": 2, "icon": "fa-solid fa-circle-check", "text": "Водительское удостоверение" },
+      { "id": 3, "icon": "fa-solid fa-circle-check", "text": "ИНН (при наличии)" },
+      { "id": 4, "icon": "fa-solid fa-circle-check", "text": "Справка о доходах (по требованию)" }
+    ]
+  },
+
+
+
+    "receipt": {
+    "bgImage": "src/Images/Png/receipt-bg.png",
+        "img2": "src/Images/Png/myswiper.png",
+    "img1": "src/Images/Png/nalicheCard.png",
+    "info": [
+      {
+        "title": "Без подтверждения дохода",
+        "text": "Чтобы получить кредит, вам нужны паспорт и водительское удостоверение. Банк не требует подтверждение дохода, информацию о продавце и оформление КАСКО."
+      },
+      {
+        "title": "Без первоначального взноса",
+        "text": "Кредит выдаётся без первоначального взноса на карту, с которой без процентов можно снять наличные. Банк доставит карту бесплатно."
+      },
+      {
+        "title": "Без сложностей с регистрацией",
+        "text": "Для регистрации автомобиля после покупки нужны только копии договора купли-продажи и паспорта транспортного средства. Да, это всё."
+      }
+    ]
+
+  },
+
+
+
+
+  
+  
+  "express": {
+    "title": "Экспресс-кредит",
+    "description": "Воплотите мечту о новом автомобиле уже сегодня с выгодным предложением.",
+    "percent": "от 1,9%",
+    "date": "Только до 10.10.21",
+    "image": "src/Images/Png/Express.png",
+    "icons": [
+      {
+        "icon": "fa-regular fa-thumbs-up",
+        "text": "Компенсируем дорогу до автосалона всем покупателям"
+      },
+      {
+        "icon": "fa-solid fa-clock",
+        "text": "БЫСТРОЕ оформление КАСКО и ОСАГО за 15 минут"
+      },
+      {
+        "icon": "fa-solid fa-percent",
+        "text": "Выгодное предложение на автомобиль"
+      }
+    ]
+  },
+  "family": {
+    "title": "Семейный автомобиль в кредит",
+    "description": "Специальное предложение для больших семей с льготными условиями.",
+    "percent": "от 0,9%",
+    "date": "Только до 15.10.21",
+    "image": "src/Images/Png/FamilyCarbg.png"
+  },
+    "first-avtomobil": {
+    "title": "Семейный автомобиль в кредит",
+    "description": "Специальное предложение для больших семей с льготными условиями.",
+    "percent": "от 1,9%",
+    "date": "Только до 15.10.21",
+    "image": "src/Images/Png/First-avto.png"
+  },
+    "medisine": {
+    "title": "Работникам медицины",
+    "description": "Компенсация от 10% до 25%",
+    "percent": "от 0,9%",
+    "date": "Только до 15.10.21",
+    "image": "src/Images/Png/MedisineBg.png"
+  },
+      "payment-plan": {
+    "title": "Рассрочка",
+    "description": "Воплотите мечту о новом автомобиле уже сегодня  с выгодным предложением. Заполните заявку, чтобы получить уникальное предложение.",
+    "percent": "0%",
+    "date": "Только до 15.10.21",
+    "image": "src/Images/Png/Payment-plan.png"
+  },
+  "tradein": {
+    "title": "Госпрограмма Trade-in",
+    "description": "Обменяйте свой автомобиль на новый с максимальной скидкой ",
+    "percent": "от 1,9%",
+    "date": "Только до 15.10.21",
+    "image": "src/Images/Png/Tradein.png",
+    "icons": [ 
+      {
+        "icon": "fa-solid fa-gear",
+        "text": "Установка любого дополнительного оборудования"
+      },
+      {
+        "icon": "fa-solid fa-gift",
+        "text": "Каждому покупателю ТО 0 и Т0-1  в подарок!"
+      },
+      {
+        "icon": "fa-solid fa-credit-card",
+        "text": "Бонусная карта на сервисное обслуживание"
+      }
+    ]
+  },
+   "taxi-kredit": {
+    "title": "Специальное предложение на покупку авто под такси",
+    "percent": "от 1,5%", 
+    "date": "Только до 10.10.21",
+    "image": "src/Images/Png/TaxiBg.png",
+      "rightImage": "src/Images/Png/Taxi-kredit-car.png",
+    "icons": [
+      {
+        "icon": "fa-solid fa-check",
+        "text": "Льготный  автокредит от 1,9%"
+      },
+      {
+        "icon": "fa-solid fa-check",
+        "text": "Оклейка авто  в подарок"
+      },
+      {
+        "icon": "fa-solid fa-check",
+        "text": "Акция действует до 13 сентября!"
+      }
+    ]
+  },
+
+
+  "receiptFamily": {
+    "bgImage": "src/Images/Png/FamilyBgg.png",
+    "img1": "src/Images/Png/Familycar1.png",
+    "img2": "src/Images/Png/Familyimg.png",
+    "info": [
+      {
+        "title": "Специальные условия для семей",
+        "text": "Получите выгодный кредит для покупки семейного автомобиля."
+      },
+      {
+        "title": "Минимальный процент",
+        "text": "Семейные клиенты могут получить ставку от 0,9%."
+      },
+      {
+        "title": "Гибкий срок погашения",
+        "text": "Выбирайте удобный срок кредита до 60 месяцев."
+      }
+    ]
+  },
+
+
+    "kompany": {
+    "title": "О компании",
+    "paragraphs": [
+      "Официальный дилер Азимут Варшавка предлагает широкий выбор автомобилей различных цветов и комплектаций на самых выгодных условиях. На территории автосалона представлено свыше двухсот новых автомобилей и с пробегом.",
+      "Среди ассортимента представлены автомобили европейского, азиатского и российского производства. Для каждого клиента предоставляется персональная консультация."
+    ],
+    "aboutTitle": "Выбирая автосалон Азимут Варшавка Вы получаете:",
+    "list": [
+      "самые выгодные цены на автомобили в Москве;",
+      "возможность выбора автомобилей более чем из двухсот моделей различных цветов и комплектаций;",
+      "приобретение автомобилей с пробегом, прошедших предпродажную подготовку и юридическую экспертизу;",
+      "быстрое и качественное оформление документов;",
+      "высокий уровень сервиса и индивидуальный подход;",
+      "выгодное приобретение автомобиля по программам Trade-in и утилизация;",
+      "сотрудничество с крупнейшими банками Москвы с выгодными условиями кредитования;",
+      "участие в программах льготного кредитования «Семейный автомобиль», «Первый автомобиль» и другие;",
+      "акции и подарки при покупке автомобиля."
+    ],
+    "bottomText": [
+      "Все вопросы о наличии и комплектациях автомобилей можно узнать по телефону или через форму обратной связи.",
+      "Мы ценим каждого клиента и гарантируем высокий уровень сервиса!",
+      "Азимут Варшавка — с нами Вам покорятся все направления!"
+    ]
+  },
+
+
+   "technical_center": {
+    "title": "Техцентр",
+    "text": "Специалисты нашего автосервиса имеют огромный опыт в обслуживании автомобилей разных производителей, новых и с пробегом, поэтому в короткие сроки способны обнаружить и исправить любую поломку. Все работы проводятся в соответствии с рекомендациями производителей.",
+    "cards": [
+      {
+        "title": "Кузовной ремонт",
+        "text": "Современное оборудование позволяет осуществлять кузовной ремонт любой сложности. Работаем только с качественными материалами от проверенных поставщиков."
+      },
+      {
+        "title": "Диагностика и электрика",
+        "text": "Проводим компьютерную диагностику, устраняем неисправности электрических систем и датчиков."
+      },
+      {
+        "title": "Ремонт ходовой части",
+        "text": "Занимаемся ремонтом подвески, тормозной системы и заменой амортизаторов. Проверяем геометрию колес."
+      },
+      {
+        "title": "Шиномонтаж и балансировка",
+        "text": "Профессиональная установка и балансировка колес. Современные станки обеспечивают точность работы."
+      },
+      {
+        "title": "Замена жидкостей и фильтров",
+        "text": "Быстрая замена масла, охлаждающей жидкости и фильтров по регламенту производителя."
+      },
+      {
+        "title": "Полировка и химчистка",
+        "text": "Комплексная мойка, полировка кузова и чистка салона. Используем сертифицированные автохимии."
+      },
+      {
+        "title": "Слесарный ремонт",
+        "text": "Ремонт узлов двигателя, КПП, сцепления и других механических элементов автомобиля."
+      },
+      {
+        "title": "Покраска автомобиля",
+        "text": "Полная или частичная покраска с подбором цвета по заводским стандартам."
+      }
+    ]
+  },
+
+   "buying_car": {
+    "text": "Хотите начать зарабатывать на себя? Приобретение собственного такси – один из самых доступных, простых, популярных и выгодных вариантов. А главное – в отличие от других видов бизнеса здесь не нужен большой стартовый капитал.",
+    "cards": [
+      {
+        "img": "src/Images/Png/Buying-car1.png",
+        "text": "0% первый взнос"
+      },
+      {
+        "img": "src/Images/Png/Buying-car2.png",
+        "text": "Одобрение кредита в течение 15-30 минут"
+      },
+      {
+        "img": "src/Images/Png/Buying-car3.png",
+        "text": "Минимум документов для подачи заявки"
+      },
+      {
+        "img": "src/Images/Png/Buying-car4.png",
+        "text": "Trade-in в качестве первоначального взноса"
+      },
+      {
+        "img": "src/Images/Png/Buying-car5.png",
+        "text": "Оклейка и брендирование в подарок"
+      },
+      {
+        "img": "src/Images/Png/Buying-car6.png",
+        "text": "Помощь в оформлении документов"
+      },
+      {
+        "img": "src/Images/Png/Buying-car7.png",
+        "text": "Комплект резины в подарок"
+      },
+      {
+        "img": "src/Images/Png/Buying-car8.png",
+        "text": "Оформление ОСАГО за 15 минут"
+      },
+      {
+        "img": "src/Images/Png/Buying-car9.png",
+        "text": "Поможем оформить лицензию под такси"
+      }
+    ]
+  },
+
+"taxi_cars": [
+  {
+    "id": 1,
+    "class": "Эконом",
+    "brand": "Lada",
+    "model": "Granta",
+    "name": "Lada Granta Liftback New 1.6 MT Comfort",
+    "old_price": "от 221 100 ₽",
+    "new_price": "от 82 ₽/день",
+    "image": "src/Images/Png/Taxi-kredit-car.png",
+    "bonuses": [
+      "Установка ГБО для экономии прибыли",
+      "Оклейка и брендирование такси",
+      "Комплект резины в подарок",
+      "Рассрочка 0%"
+    ]
+  },
+  {
+    "id": 2,
+    "class": "Эконом",
+    "brand": "Renault",
+    "model": "Logan",
+    "name": "Renault Logan 1.6 MT Life",
+    "old_price": "от 250 000 ₽",
+    "new_price": "от 90 ₽/день",
+    "image": "src/Images/Png/Taxi-kredit-car.png",
+    "bonuses": [
+      "Скидка 10% на ТО",
+      "Рассрочка 0%",
+      "Бесплатная мойка 2 недели"
+    ]
+  },
+  {
+    "id": 3,
+    "class": "Эконом",
+    "brand": "Volkswagen",
+    "model": "Polo",
+    "name": "Volkswagen Polo 1.6 AT Trendline",
+    "old_price": "от 270 000 ₽",
+    "new_price": "от 95 ₽/день",
+    "image": "src/Images/Png/Taxi-kredit-car.png",
+    "bonuses": [
+      "Гарантия 2 года",
+      "Оформление за 1 день"
+    ]
+  },
+  {
+    "id": 4,
+    "class": "Эконом",
+    "brand": "Chevrolet",
+    "model": "Nexia",
+    "name": "Chevrolet Nexia 1.5 LT",
+    "old_price": "от 210 000 ₽",
+    "new_price": "от 78 ₽/день",
+    "image": "src/Images/Png/Taxi-kredit-car.png",
+    "bonuses": [
+      "Бесплатное ТО 3 месяца",
+      "Оформление страховки"
+    ]
+  },
+  {
+    "id": 5,
+    "class": "Эконом",
+    "brand": "Lada",
+    "model": "Vesta",
+    "name": "Lada Vesta Sedan Classic",
+    "old_price": "от 260 000 ₽",
+    "new_price": "от 88 ₽/день",
+    "image": "src/Images/Png/Taxi-kredit-car.png",
+    "bonuses": ["Рассрочка 0%", "Комплект зимней резины"]
+  },
+  {
+    "id": 6,
+    "class": "Эконом",
+    "brand": "Kia",
+    "model": "Rio",
+    "name": "Kia Rio 1.6 MT Comfort",
+    "old_price": "от 280 000 ₽",
+    "new_price": "от 100 ₽/день",
+    "image": "src/Images/Png/Taxi-kredit-car.png",
+    "bonuses": ["Техническая поддержка", "Страховка включена"]
+  },
+  {
+    "id": 7,
+    "class": "Эконом",
+    "brand": "Hyundai",
+    "model": "Accent",
+    "name": "Hyundai Accent 1.4 MT Active",
+    "old_price": "от 275 000 ₽",
+    "new_price": "от 98 ₽/день",
+    "image": "src/Images/Png/Taxi-kredit-car.png",
+    "bonuses": ["ТО со скидкой", "1 год гарантии"]
+  },
+  {
+    "id": 8,
+    "class": "Эконом",
+    "brand": "Skoda",
+    "model": "Rapid",
+    "name": "Skoda Rapid 1.6 MT Active",
+    "old_price": "от 295 000 ₽",
+    "new_price": "от 105 ₽/день",
+    "image": "src/Images/Png/Taxi-kredit-car.png",
+    "bonuses": ["Рассрочка 0%", "ТО бесплатно 1 месяц"]
+  },
+  {
+    "id": 9,
+    "class": "Эконом",
+    "brand": "Lada",
+    "model": "Kalina",
+    "name": "Lada Kalina 1.6 MT",
+    "old_price": "от 210 000 ₽",
+    "new_price": "от 80 ₽/день",
+    "image": "src/Images/Png/Taxi-kredit-car.png",
+    "bonuses": ["Резина в подарок"]
+  },
+  {
+    "id": 10,
+    "class": "Эконом",
+    "brand": "Datsun",
+    "model": "on-DO",
+    "name": "Datsun on-DO 1.6 MT",
+    "old_price": "от 205 000 ₽",
+    "new_price": "от 77 ₽/день",
+    "image": "src/Images/Png/Taxi-kredit-car.png",
+    "bonuses": ["ТО 6 месяцев бесплатно"]
+  },
+
+  {
+    "id": 11,
+    "class": "Комфорт",
+    "brand": "Hyundai",
+    "model": "Solaris",
+    "name": "Hyundai Solaris AT Classic",
+    "old_price": "от 480 000 ₽",
+    "new_price": "от 180 ₽/день",
+    "image": "src/Images/Png/Taxi-kredit-car.png",
+    "bonuses": ["Оформление ОСАГО", "Техподдержка 24/7"]
+  },
+  {
+    "id": 12,
+    "class": "Комфорт",
+    "brand": "Kia",
+    "model": "Ceed",
+    "name": "Kia Ceed AT Comfort",
+    "old_price": "от 520 000 ₽",
+    "new_price": "от 190 ₽/день",
+    "image": "src/Images/Png/Taxi-kredit-car.png",
+    "bonuses": ["ТО со скидкой", "1 месяц мойки бесплатно"]
+  },
+  {
+    "id": 13,
+    "class": "Комфорт",
+    "brand": "Volkswagen",
+    "model": "Jetta",
+    "name": "Volkswagen Jetta 1.6 AT",
+    "old_price": "от 530 000 ₽",
+    "new_price": "от 200 ₽/день",
+    "image": "src/Images/Png/Taxi-kredit-car.png",
+    "bonuses": ["Оформление быстро", "Рассрочка 0%"]
+  },
+  {
+    "id": 14,
+    "class": "Комфорт",
+    "brand": "Toyota",
+    "model": "Corolla",
+    "name": "Toyota Corolla Comfort",
+    "old_price": "от 550 000 ₽",
+    "new_price": "от 210 ₽/день",
+    "image": "src/Images/Png/Taxi-kredit-car.png",
+    "bonuses": ["Бесплатная страховка"]
+  },
+  {
+    "id": 15,
+    "class": "Комфорт",
+    "brand": "Mazda",
+    "model": "3",
+    "name": "Mazda 3 Comfort",
+    "old_price": "от 600 000 ₽",
+    "new_price": "от 220 ₽/день",
+    "image": "src/Images/Png/Taxi-kredit-car.png",
+    "bonuses": ["VIP обслуживание"]
+  },
+  {
+    "id": 16,
+    "class": "Комфорт",
+    "brand": "Honda",
+    "model": "Civic",
+    "name": "Honda Civic Comfort",
+    "old_price": "от 610 000 ₽",
+    "new_price": "от 225 ₽/день",
+    "image": "src/Images/Png/Taxi-kredit-car.png",
+    "bonuses": ["Страховка включена"]
+  },
+  {
+    "id": 17,
+    "class": "Комфорт",
+    "brand": "Peugeot",
+    "model": "301",
+    "name": "Peugeot 301 Comfort",
+    "old_price": "от 570 000 ₽",
+    "new_price": "от 215 ₽/день",
+    "image": "src/Images/Png/Taxi-kredit-car.png",
+    "bonuses": ["ТО бесплатно 1 мес."]
+  },
+  {
+    "id": 18,
+    "class": "Комфорт",
+    "brand": "Citroen",
+    "model": "C-Elysee",
+    "name": "Citroen C-Elysee Comfort",
+    "old_price": "от 560 000 ₽",
+    "new_price": "от 210 ₽/день",
+    "image": "src/Images/Png/Taxi-kredit-car.png",
+    "bonuses": ["Техосмотр включен"]
+  },
+  {
+    "id": 19,
+    "class": "Комфорт",
+    "brand": "Skoda",
+    "model": "Octavia",
+    "name": "Skoda Octavia AT",
+    "old_price": "от 580 000 ₽",
+    "new_price": "от 230 ₽/день",
+    "image": "src/Images/Png/Taxi-kredit-car.png",
+    "bonuses": ["Рассрочка", "Страховка бесплатно"]
+  },
+  {
+    "id": 20,
+    "class": "Комфорт",
+    "brand": "Nissan",
+    "model": "Sentra",
+    "name": "Nissan Sentra Comfort",
+    "old_price": "от 590 000 ₽",
+    "new_price": "от 235 ₽/день",
+    "image": "src/Images/Png/Taxi-kredit-car.png",
+    "bonuses": ["Мойка 2 недели бесплатно"]
+  },
+
+  {
+    "id": 21,
+    "class": "Комфорт+",
+    "brand": "Kia",
+    "model": "K5",
+    "name": "Kia K5 Business AT",
+    "old_price": "от 920 000 ₽",
+    "new_price": "от 350 ₽/день",
+    "image": "src/Images/Png/Taxi-kredit-car.png",
+    "bonuses": ["VIP обслуживание", "Оклейка в подарок"]
+  },
+  {
+    "id": 22,
+    "class": "Комфорт+",
+    "brand": "Toyota",
+    "model": "Camry",
+    "name": "Toyota Camry AT Premium",
+    "old_price": "от 950 000 ₽",
+    "new_price": "от 360 ₽/день",
+    "image": "src/Images/Png/Taxi-kredit-car.png",
+    "bonuses": ["Кожаный салон", "Рассрочка 0%"]
+  },
+  {
+    "id": 23,
+    "class": "Комфорт+",
+    "brand": "Mazda",
+    "model": "6",
+    "name": "Mazda 6 AT Exclusive",
+    "old_price": "от 970 000 ₽",
+    "new_price": "от 370 ₽/день",
+    "image": "src/Images/Png/Taxi-kredit-car.png",
+    "bonuses": ["Гарантия 3 года"]
+  },
+  {
+    "id": 24,
+    "class": "Комфорт+",
+    "brand": "Honda",
+    "model": "Accord",
+    "name": "Honda Accord AT Executive",
+    "old_price": "от 990 000 ₽",
+    "new_price": "от 380 ₽/день",
+    "image": "src/Images/Png/Taxi-kredit-car.png",
+    "bonuses": ["VIP сервис", "Техосмотр бесплатно"]
+  },
+  {
+    "id": 25,
+    "class": "Комфорт+",
+    "brand": "Volkswagen",
+    "model": "Passat",
+    "name": "Volkswagen Passat AT Business",
+    "old_price": "от 940 000 ₽",
+    "new_price": "от 355 ₽/день",
+    "image": "src/Images/Png/Taxi-kredit-car.png",
+    "bonuses": ["Скидка 5%", "Оформление быстро"]
+  },
+  {
+    "id": 26,
+    "class": "Комфорт+",
+    "brand": "Nissan",
+    "model": "Teana",
+    "name": "Nissan Teana AT Premium",
+    "old_price": "от 980 000 ₽",
+    "new_price": "от 375 ₽/день",
+    "image": "src/Images/Png/Taxi-kredit-car.png",
+    "bonuses": ["Тест-драйв бесплатно"]
+  },
+  {
+    "id": 27,
+    "class": "Комфорт+",
+    "brand": "Skoda",
+    "model": "Superb",
+    "name": "Skoda Superb AT Style",
+    "old_price": "от 1 000 000 ₽",
+    "new_price": "от 390 ₽/день",
+    "image": "src/Images/Png/Taxi-kredit-car.png",
+    "bonuses": ["Рассрочка 0%", "VIP обслуживание"]
+  },
+  {
+    "id": 28,
+    "class": "Комфорт+",
+    "brand": "Peugeot",
+    "model": "508",
+    "name": "Peugeot 508 GT Line",
+    "old_price": "от 980 000 ₽",
+    "new_price": "от 385 ₽/день",
+    "image": "src/Images/Png/Taxi-kredit-car.png",
+    "bonuses": ["Гарантия 2 года"]
+  },
+  {
+    "id": 29,
+    "class": "Комфорт+",
+    "brand": "Citroen",
+    "model": "C5",
+    "name": "Citroen C5 Shine",
+    "old_price": "от 960 000 ₽",
+    "new_price": "от 370 ₽/день",
+    "image": "src/Images/Png/Taxi-kredit-car.png",
+    "bonuses": ["Техосмотр включен"]
+  },
+  {
+    "id": 30,
+    "class": "Комфорт+",
+    "brand": "Genesis",
+    "model": "G70",
+    "name": "Genesis G70 Premium",
+    "old_price": "от 1 050 000 ₽",
+    "new_price": "от 400 ₽/день",
+    "image": "src/Images/Png/Taxi-kredit-car.png",
+    "bonuses": ["Кредит 0%", "Гарантия 5 лет"]
+  }
+],
+
+
+  "special_offers": [
+    {
+      "id": 1,
+      "title": "Утилизация",
+      "text": "1,9% по льготной ставке",
+      "img": "src/Images/Png/utilization.png",
+      "link": "#"
+    },
+    {
+      "id": 2,
+      "title": "Trade-in",
+      "text": "1,9% по льготной ставке",
+      "img": "src/Images/Png/tradein.png",
+      "link": "#"
+    },
+    {
+      "id": 3,
+      "title": "Рассрочка",
+      "text": "Без переплат до 36 месяцев",
+      "img": "src/Images/Png/installment.png",
+      "link": "/avto-kredit"
+    }
+  ]
+
+
+}

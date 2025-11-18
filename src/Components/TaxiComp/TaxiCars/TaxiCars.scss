@@ -1,0 +1,444 @@
+@import '../../../Varibless/Varibles.scss';
+@import '../../../Mixins/Mixin.scss';
+
+.taxi-cars {
+  padding: 40px 0;
+  background-color: var(--bg-color);
+  transition: all 0.4s ease-in-out;
+
+  .container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 60px;
+    flex-wrap: wrap;
+
+    .top__img {
+      width: 330px;
+      height: auto;
+      object-fit: contain;
+      filter: brightness(0.9);
+      transition: filter 0.3s;
+    }
+
+    .top__title {
+      @include font(700, 35, 1.3, var(--text-color));
+      text-align: center;
+      transition: color 0.3s ease;
+    }
+  }
+
+  /* 🚗 Tanlov qismi */
+  .choice {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    gap: 20px;
+    background-color: var(--gray);
+    padding: 20px;
+    border-radius: 25px;
+
+    .left {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 15px;
+
+      .choice__text {
+        @include font(600, 18, 1.4, var(--text-color));
+      }
+
+      .btn {
+        padding: 8px 18px;
+        background-color: transparent;
+        border: 1.5px solid var(--subtitle-color);
+        border-radius: 8px;
+        cursor: pointer;
+        transition: 0.3s;
+        @include font(500, 16, 1.4, var(--text-color));
+
+        &:hover {
+          background-color: var(--btn-bg);
+          color: var(--btn-color);
+          border-color: var(--btn-bg);
+        }
+
+        &.active {
+          background-color: var(--btn-bg);
+          color: var(--btn-color);
+        }
+      }
+    }
+
+    .right {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      flex-wrap: wrap;
+
+      .select {
+        padding: 8px 14px;
+        border-radius: 6px;
+        border: 1px solid var(--subtitle-color);
+        @include font(400, 16, 1.4, var(--text-color));
+        background-color: var(--main-bg);
+        outline: none;
+        transition: 0.3s;
+
+        &:hover {
+          border-color: var(--btn-bg);
+        }
+      }
+    }
+  }
+
+  /* 🧩 Karta joylashuvi */
+  .cards-wrp {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+  }
+
+  /* 🪪 Har bir karta */
+  .card {
+    flex: 1 1 calc(33.333% - 25px);
+    max-width: calc(33.333% - 25px);
+    background-color: var(--main-bg);
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: 0.3s ease-in-out;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+    }
+
+    .card__top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+
+      .left {
+        display: flex;
+        gap: 10px;
+
+        i {
+          font-size: 18px;
+          cursor: pointer;
+          color: var(--subtitle-color);
+          transition: color 0.3s;
+
+          &:hover {
+            color: var(--btn-bg);
+          }
+        }
+
+        .like-icon {
+          cursor: pointer;
+          transition: color 0.3s ease, transform 0.2s ease;
+
+          &:hover {
+            transform: scale(1.2);
+          }
+
+          &.liked {
+            color: red;
+          }
+        }
+      }
+
+      .right__text {
+        @include font(600, 14, 1.3, var(--btn-bg));
+        background: var(--gray);
+        padding: 4px 10px;
+        border-radius: 6px;
+      }
+    }
+
+    .center {
+      text-align: center;
+      margin-bottom: 15px;
+
+      .card__img {
+        width: 100%;
+        height: 180px;
+        object-fit: contain;
+        margin-bottom: 10px;
+      }
+
+      .card__title {
+        @include font(600, 18, 1.4, var(--text-color));
+        margin-bottom: 6px;
+      }
+
+      .old-price {
+        text-decoration: line-through;
+        color: var(--subtitle-color);
+        font-size: 14px;
+      }
+
+      .new-price {
+        @include font(600, 16, 1.4, var(--btn-bg));
+      }
+    }
+
+    .card__info {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 15px;
+
+      .gift {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        i {
+          color: var(--btn-bg);
+        }
+
+        .gift__text {
+          @include font(400, 14, 1.4, var(--subtitle-color));
+        }
+      }
+    }
+
+    .card__btns {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+
+      .btn1,
+      .btn2 {
+        flex: 1;
+        padding: 10px;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: 0.3s;
+        font-weight: 600;
+      }
+
+      .btn1 {
+        background-color: transparent;
+        border: 1px solid var(--btn-bg);
+        color: var(--btn-bg);
+
+        &:hover {
+          background-color: var(--btn-bg);
+          color: var(--btn-color);
+        }
+      }
+
+      .btn2 {
+        background-color: var(--btn-bg);
+        color: var(--btn-color);
+        border: none;
+
+        &:hover {
+          background-color: var(--btn-hover-bg);
+        }
+      }
+    }
+  }
+
+  /* 🔽 “Показать еще” tugmasi */
+  .Show-more {
+    display: block;
+    margin: 30px auto 0;
+    padding: 12px 30px;
+    background-color: var(--btn-bg);
+    color: var(--btn-color);
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+      background-color: var(--btn-hover-bg);
+    }
+  }
+
+  /* 📱 RESPONSIVE QISMLAR */
+
+   @media (max-width: 1300px) {
+    .card {
+      flex: 1 1 calc(33.333% - 20px);
+      max-width: calc(33.333% - 20px);
+    }
+
+    .taxi-cars__top .top__img {
+      width: 250px;
+    }
+  }
+
+
+
+  @media (max-width: 1200px) {
+    .card {
+      flex: 1 1 calc(33.333% - 20px);
+      max-width: calc(33.333% - 20px);
+    }
+
+    .taxi-cars__top .top__img {
+      width: 150px;
+    }
+  }
+
+  @media (max-width: 990px) {
+    .taxi-cars__top {
+      gap: 20px;
+
+      .top__title {
+        width: 100%;
+        font-size: 28px;
+      }
+
+      .top__img {
+        display: none;
+        width: 250px;
+      }
+    }
+
+    .card {
+      flex: 1 1 calc(50% - 20px);
+      max-width: calc(50% - 20px);
+    }
+
+    .choice {
+      flex-direction: column;
+      align-items: flex-start;
+
+      .right {
+        width: 100%;
+        justify-content: flex-start;
+
+        .select {
+          flex: 1;
+          min-width: 48%;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .taxi-cars__top {
+      // flex-direction: column;
+      text-align: center;
+.top__title{
+  width: auto;
+}
+      .top__img {
+        display: flex;
+        width: 40px;
+      }
+    }
+
+    .choice {
+      padding: 15px;
+      gap: 15px;
+
+      .left {
+        justify-content: center;
+        .btn {
+          font-size: 14px;
+          padding: 6px 14px;
+        }
+      }
+
+      .right {
+        justify-content: center;
+      }
+    }
+
+    .card {
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
+  }
+
+
+    @media (max-width: 610px) {
+    .taxi-cars__top {
+      flex-direction: column;
+      text-align: center;
+
+      .top__img {
+        width: 220px;
+      }
+    }
+
+    .choice {
+      padding: 15px;
+      gap: 15px;
+
+      .left {
+        justify-content: center;
+        .btn {
+          font-size: 14px;
+          padding: 6px 14px;
+        }
+      }
+
+      .right {
+        justify-content: center;
+      }
+    }
+
+    .card {
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
+  }
+
+
+  @media (max-width: 480px) {
+    .choice {
+      .choice__text {
+        font-size: 16px;
+      }
+
+      .btn {
+        font-size: 13px;
+        padding: 6px 10px;
+      }
+    }
+
+    .card {
+      padding: 15px;
+
+      .center .card__img {
+        height: 150px;
+      }
+
+      .card__title {
+        font-size: 16px;
+      }
+
+      .new-price {
+        font-size: 15px;
+      }
+    }
+
+    .Show-more {
+      font-size: 14px;
+      padding: 10px 25px;
+    }
+  }
+}

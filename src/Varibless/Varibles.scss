@@ -1,0 +1,59 @@
+/* ===========================
+   🌙 DARK MODE
+=========================== */
+:root {
+  --text-color: #262626;
+  --subtitle-color: #757575;
+  --btn-bg: #ca0100;
+  --btn-hover-bg: #da6c6c;
+  --btn-color: #fff;
+  --bg-color: #fafafa;
+  --main-bg: #fff;
+  --extra-color: #eff0f0;
+  --gray: #eff0f0;
+  --reting-color: #55bc6b;
+  --black: #363333;
+  --yellow: #ffbb00;
+  --blackk: #000;
+  --white: #fff;
+}
+
+/* 🌙 DARK THEME VARIABLES */
+[data-theme="dark"] {
+  --text-color: #ededed;
+  --subtitle-color: #c0c0c0;
+  --btn-bg: #ff4b4b;
+  --btn-hover-bg: #ff6b6b;
+  --btn-color: #ffffff;
+  --bg-color: #121212;
+  --main-bg: #282828;
+  --extra-color: #2a2a2a;
+  --gray: #3a3a3a;
+  --reting-color: #63d471;
+  transition: all 0.4s ease-in-out;
+  --black: #000;
+    --yellow: #ffbb00;
+
+}
+
+/* 🔹 Navbar Dark Mode Styling */
+[data-theme="dark"] .navbar {
+  background-color: var(--main-bg);
+  box-shadow: 0 2px 10px rgba(255, 255, 255, 0.05);
+}
+
+[data-theme="dark"] .nav-links a {
+  color: var(--text-color);
+}
+
+[data-theme="dark"] .nav-links a:hover {
+  color: var(--btn-bg);
+}
+
+[data-theme="dark"] .nav__bottom button {
+  color: var(--text-color);
+}
+
+[data-theme="dark"] .nav__bottom .icons i {
+  color: var(--text-color);
+}

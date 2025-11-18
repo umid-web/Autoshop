@@ -1,0 +1,7 @@
+@import '../Varibless/Varibles.scss';
+@import '../Mixins/Mixin.scss';
+
+
+.page-div{
+    background-color: var(--bg-color);
+}

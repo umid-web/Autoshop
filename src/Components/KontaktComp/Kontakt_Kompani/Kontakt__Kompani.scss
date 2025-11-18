@@ -1,0 +1,118 @@
+@import '../../../Varibless/Varibles.scss';
+@import '../../../Mixins/Mixin.scss';
+
+.kontakt-kompani {
+  padding: 10px 0 80px;
+  background-color: var(--bg-color);
+
+  .container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    // ✅ Asosiy joylashuv — yonma-yon chiqsin
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 40px;
+    text-align: left; // barcha matn chapdan boshlangan bo‘lsin
+
+    .description {
+      flex: 1 1 50%;
+      background-color: transparent;
+      text-align: left; // markazga ketmasin
+
+      .title {
+        @include font(700, 32, 1.3, var(--text-color));
+        margin-bottom: 15px;
+        text-align: left; // sarlavha ham chapdan
+      }
+
+      .text {
+        @include font(400, 16, 1.6, var(--subtitle-color));
+        margin: 0;
+        text-align: justify; // professional ko‘rinish uchun matn tekislansin
+      }
+    }
+
+    .images {
+      flex: 1 1 35%;
+      border-radius: 20px;
+      overflow: hidden;
+      position: relative;
+      align-self: flex-start; // markazga chiqmasin
+
+      .swiper {
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+      }
+
+      .swiper-slide {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .company-img {
+        width: 100%;
+        height: 270px;
+        object-fit: cover;
+        border-radius: 20px;
+        display: block;
+      }
+
+      .swiper-pagination-bullet {
+        background: var(--btn-bg);
+        width: 50px;
+        height: 6px;
+        border-radius: 10px;
+        transition: 0.3s;
+      }
+
+      .swiper-pagination-bullet-active {
+        width: 100px;
+        background: var(--btn-hover-bg);
+      }
+
+      .swiper-button-next,
+      .swiper-button-prev {
+        color: var(--btn-bg);
+        transition: color 0.3s;
+
+        &:hover {
+          color: var(--btn-hover-bg);
+        }
+      }
+    }
+  }
+
+  /* 📱 RESPONSIVE */
+  @media (max-width: 900px) {
+    .container {
+      flex-direction: column;
+      align-items: flex-start; // markazlashmasin
+      justify-content: flex-start; 
+      text-align: left;
+
+      .description {
+        width: 100%;
+        text-align: left;
+      }
+
+      .images {
+        width: 100%;
+        max-width: 100%;
+        align-self: flex-start;
+
+        .swiper-slide {
+          height: 300px;
+        }
+      }
+    }
+  }
+}

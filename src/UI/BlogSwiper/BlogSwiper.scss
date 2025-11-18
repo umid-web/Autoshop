@@ -1,0 +1,168 @@
+@import '../../Varibless/Varibles.scss';
+@import '../../Mixins/Mixin.scss';
+
+.blog {
+  padding: 50px 0;
+  background: var(--bg-color);
+
+  .container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    // === Yuqori qism ===
+    .top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 35px;
+
+      .title--wrp {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        .title {
+          @include font(700, 28, 1.3, var(--text-color));
+        }
+
+        .title__btn {
+          background-color: var(--btn-bg);
+          color: var(--btn-color);
+          border: none;
+          border-radius: 10px;
+          padding: 10px 20px;
+          font-size: 14px;
+          cursor: pointer;
+          transition: all 0.3s ease;
+
+          &:hover {
+            background-color: var(--btn-hover-bg);
+            transform: translateY(-2px);
+          }
+        }
+      }
+
+      .btns {
+        display: flex;
+        gap: 15px;
+
+        i {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 22px;
+          color: var(--subtitle-color);
+          cursor: pointer;
+          transition: all 0.3s ease;
+          width: 40px;
+          height: 40px;
+          border-radius: 10px;
+          background-color: var(--gray);
+          box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+
+          &:hover {
+            background-color: var(--btn-bg);
+            color: var(--btn-color);
+            transform: scale(1.2);
+          }
+
+          &:active {
+            transform: scale(0.95);
+          }
+        }
+      }
+    }
+
+    // === Kartalar ===
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+
+      .card {
+        position: relative;
+        border-radius: 16px;
+        overflow: hidden;
+        background-color: var(--main-bg);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        transition: all 0.3s ease;
+
+        &:hover {
+          transform: translateY(-6px);
+          box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Fon rasmi uchun */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        min-height: 280px;
+        display: flex;
+        align-items: flex-end;
+
+        .card__bottom {
+          background: rgba(0, 0, 0, 0.5);
+          padding: 20px;
+          width: 100%;
+          color: #fff;
+          border-radius: 0 0 16px 16px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+
+          .card__title {
+            @include font(600, 18, 1.4, #fff);
+            margin-bottom: 8px;
+          }
+
+          .text {
+            @include font(400, 14, 1.5, #eee);
+          }
+        }
+      }
+    }
+  }
+}
+
+// === Responsiv holatlar ===
+@media (max-width: 1200px) {
+  .blog {
+    .container {
+      .cards {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .blog {
+    .container {
+      .cards {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .top {
+        align-items: flex-start;
+        gap: 15px;
+      }
+    }
+  }
+}
+
+@media (max-width: 560px) {
+  .blog {
+    .container {
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      .top {
+        .title--wrp {
+          align-items: flex-start;
+        }
+      }
+    }
+  }
+}

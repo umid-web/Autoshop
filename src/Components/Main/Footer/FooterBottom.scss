@@ -1,0 +1,274 @@
+@import '../../../Mixins/Mixin.scss';
+@import '../../../Varibless/Varibles.scss';
+
+.footerbottom {
+  background-color: var(--blackk);
+  color: var(--text-color);
+  padding: 10px 0;
+  font-family: 'Inter', sans-serif;
+  transition: all 0.4s ease-in-out;
+
+  .container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 30px 20px 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+    border-top: 1px solid var(--gray);
+  }
+
+  /* ========== Chap bo‘lim ========== */
+  .left {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    gap: 20px;
+
+    .tit {
+      @include font(500, 16, 1.4, var(--subtitle-color));
+    }
+
+    .link {
+      display: flex;
+      gap: 40px;
+
+      a {
+        text-decoration: none;
+        color: var(--btn-bg);
+        font-size: 14px;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: var(--btn-hover-bg);
+        }
+      }
+    }
+  }
+
+  /* ========== O‘rta bo‘lim ========== */
+  .center {
+    width: 500px;
+
+    .text {
+      @include font(400, 13, 1.7, var(--subtitle-color));
+      text-align: justify;
+    }
+  }
+
+  /* ========== O‘ng bo‘lim ========== */
+  .right {
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    img {
+      width: 250px;
+      height: auto;
+      opacity: 0.8;
+      transition: opacity 0.3s ease;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+@media(max-width:1300px){
+  .footerbottom {
+
+
+
+  /* ========== Chap bo‘lim ========== */
+  .left {
+    width: 460px;
+    gap: 20px;
+
+    .tit {
+      @include font(500, 16, 1.4, var(--subtitle-color));
+    }
+
+    .link {
+      display: flex;
+      gap: 40px;
+
+      a {
+        font-size: 14px;
+      }
+    }
+  }
+
+  /* ========== O‘rta bo‘lim ========== */
+  .center {
+    width: 390px;
+
+    .text {
+      @include font(400, 13, 1.7, var(--subtitle-color));
+    }
+  }
+
+  /* ========== O‘ng bo‘lim ========== */
+  .right {
+
+    img {
+      width: 250px;
+    }
+  }
+}
+}
+
+
+
+
+
+
+@media(max-width:1200px){
+  .footerbottom {
+
+
+  /* ========== Chap bo‘lim ========== */
+  .left {
+    width: 46%;
+
+    .tit {
+      @include font(500, 16, 1.4, var(--subtitle-color));
+    }
+
+    .link {
+      display: flex;
+      gap: 40px;
+
+      a {
+        font-size: 13px;
+
+      }
+    }
+  }
+
+  /* ========== O‘rta bo‘lim ========== */
+  .center {
+    width: 50%;
+
+    .text {
+      @include font(400, 13, 1.7, var(--subtitle-color));
+    }
+  }
+
+  /* ========== O‘ng bo‘lim ========== */
+  .right {
+    img {
+      width: 250px;
+    }
+  }
+}
+}
+
+
+
+
+
+@media(max-width:990px){
+  .footerbottom {
+
+.container{
+  gap: 10px;
+}
+
+
+  /* ========== Chap bo‘lim ========== */
+  .left {
+    display: flex;
+    flex-direction: column;
+    width: 460px;
+    gap: 20px;
+
+    .tit {
+      @include font(500, 16, 1.4, var(--subtitle-color));
+    }
+
+    .link {
+      display: flex;
+      gap: 40px;
+
+      a {
+        font-size: 14px;
+
+      }
+    }
+  }
+
+  /* ========== O‘rta bo‘lim ========== */
+  .center {
+    width:35%;
+
+    .text {
+      @include font(400, 13, 1.7, var(--subtitle-color));
+    }
+  }
+
+  /* ========== O‘ng bo‘lim ========== */
+  .right {
+
+
+    img {
+      width: 250px;
+    }
+  }
+}
+}
+
+
+
+
+
+
+
+@media(max-width:768px){
+ .footerbottom {
+  .container {
+    gap: 30px;
+  }
+
+  /* ========== Chap bo‘lim ========== */
+  .left {
+    width: 100%;
+    gap: 20px;
+
+    .tit {
+      @include font(500, 14, 1.4, var(--subtitle-color));
+      text-align: center;
+    }
+
+    .link {
+      display: flex;
+      gap: 20px;
+
+      a {
+        font-size: 13px;
+      }
+    }
+  }
+
+  /* ========== O‘rta bo‘lim ========== */
+  .center {
+    width: 100%;
+  }
+
+  /* ========== O‘ng bo‘lim ========== */
+  .right {
+width: 100%;
+    img {
+      width: 50%;
+    }
+  }
+} 
+}

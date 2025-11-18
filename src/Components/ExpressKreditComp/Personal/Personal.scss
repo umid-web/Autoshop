@@ -1,0 +1,130 @@
+@import '../../../Varibless/Varibles.scss';
+@import '../../../Mixins/Mixin.scss';
+
+.personal {
+  padding: 40px 0;
+  background: var(--gray);
+  transition: background-color 0.3s ease;
+
+  .container {
+    max-width: 1440px;
+    margin: 0 auto;
+    background: var(--bg-color);
+    padding:50px 80px;
+    border-radius: 25px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: background-color 0.4s ease, color 0.4s ease;
+  }
+
+  .name {
+    @include font(700, 26, 1.3, var(--text-color));
+    margin-bottom: 35px;
+  }
+
+  .form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    gap: 20px;
+
+    input,
+    select {
+      width: 47%;
+      padding: 15px 20px;
+      border: 1px solid var(--gray);
+      border-radius: 10px;
+      background: var(--main-bg);
+      @include font(400, 16, 1.4, var(--text-color));
+      outline: none;
+      transition: border-color 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+
+      &:focus {
+        border-color: var(--btn-bg);
+        box-shadow: 0 0 0 3px rgba(202, 1, 0, 0.1);
+      }
+
+      &::placeholder {
+        color: var(--subtitle-color);
+      }
+    }
+
+    select {
+      cursor: pointer;
+      background: var(--main-bg);
+      appearance: none;
+      background-image: url("data:image/svg+xml;utf8,<svg fill='gray' height='16' width='16' xmlns='http://www.w3.org/2000/svg'><path d='M4 6l4 4 4-4z'/></svg>");
+      background-repeat: no-repeat;
+      background-position: right 15px center;
+      background-size: 14px;
+    }
+
+    .btn {
+      width: 47%;
+      background: var(--btn-bg);
+      color: var(--btn-color);
+      border: none;
+      @include font(500, 16, 1.4, var(--btn-color));
+      border-radius: 8px;
+      padding: 17px 0;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+
+      &:hover {
+        background: var(--btn-hover-bg);
+        transform: translateY(-2px);
+        box-shadow: 0 6px 15px rgba(202, 1, 0, 0.2);
+      }
+
+      &:active {
+        transform: scale(0.98);
+      }
+    }
+  }
+
+  .text {
+    @include font(400, 14, 1.6, var(--subtitle-color));
+    margin-top: 10px;
+    text-align: center;
+    max-width: 90%;
+    margin-inline: auto;
+  }
+
+  .loading {
+    text-align: center;
+    @include font(500, 18, 1.5, var(--subtitle-color));
+    margin-top: 50px;
+  }
+
+  /* 🌐 RESPONSIVE */
+
+  @media(max-width:768px){
+.container{
+  padding: 40px;
+}
+  }
+
+
+
+  @media (max-width: 600px) {
+    .container {
+      padding: 30px;
+    }
+
+    .form {
+      flex-direction: column;
+      align-items: stretch;
+
+      input,
+      select,
+      .btn {
+        width: 100%;
+      }
+    }
+
+    .name {
+      font-size: 22px;
+    }
+  }
+}

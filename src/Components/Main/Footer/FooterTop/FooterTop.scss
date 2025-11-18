@@ -1,0 +1,110 @@
+@import '../../../../Varibless/Varibles.scss';
+@import '../../../../Mixins/Mixin.scss';
+
+.footertop {
+  background-color: var(--blackk);
+  padding: 0 0 20px 0;
+
+  .container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 20px 20px;
+    border-bottom: 1px solid var(--extra-color);
+
+    .pages {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 25px;
+
+      a {
+        color: var(--white);
+        font-size: 15px;
+        font-weight: 500;
+        text-decoration: none;
+        transition: 0.3s ease;
+        position: relative;
+
+        &:hover {
+          color: var(--btn-bg);
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: -5px;
+          width: 0%;
+          height: 2px;
+          background-color: var(--btn-bg);
+          transition: width 0.3s ease;
+        }
+
+        &:hover::after {
+          width: 100%;
+        }
+
+        &.active {
+          color: var(--btn-bg);
+
+          &::after {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* =============== RESPONSIVE =============== */
+
+/* Planshetlar (768px–990px) uchun */
+@media (max-width: 990px) {
+  .footertop {
+    .container {
+      .pages {
+        justify-content: space-between;
+
+        a {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+
+/* Kichik ekranlar (480px–768px) uchun */
+@media (max-width: 768px) {
+  .footertop {
+    .container {
+      .pages {
+        justify-content: flex-start;
+
+        a {
+          font-size: 14px;
+          width: 180px;
+        }
+      }
+    }
+  }
+}
+
+/* Juda kichik ekranlar (447px va past) uchun */
+@media (max-width: 447px) {
+  .footertop {
+    padding: 10px 0;
+    .container {
+      .pages {display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        a {
+          width: 44%;
+          font-size: 14px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}

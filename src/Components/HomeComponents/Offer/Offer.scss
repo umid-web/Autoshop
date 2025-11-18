@@ -1,0 +1,350 @@
+@import "../../../Varibless/Varibles.scss";
+@import "../../../Mixins/Mixin.scss";
+
+.offer {
+  background-color: var(--bg-color);
+  padding: 60px 0;
+
+  .container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 40px 40px 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    background: linear-gradient(to left, #000000, var(--btn-bg));
+    border-radius: 25px;
+    box-shadow: 0 5px 15px var(--text-color);
+
+    .offer__img {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 450px;
+      flex-shrink: 0;
+
+      img {
+        width: 100%;
+        max-width: 450px;
+        border-radius: 20px;
+        display: flex;
+        transition: transform 0.4s ease;
+
+        &:hover {
+          transform: scale(1.03);
+        }
+      }
+    }
+
+    .desc {
+      width: calc(100% - 460px);
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      justify-content: center;
+      margin-bottom: 20px;
+
+      .title {
+        @include font(700, 36, 1.3, var(--btn-color));
+        letter-spacing: 0.5px;
+      }
+
+      .text {
+        @include font(400, 18, 1.5, var(--extra-color));
+        opacity: 0.9;
+      }
+
+      .buttons {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        width: 100%;
+
+        .tell {
+          flex: 1;
+          padding: 15px;
+          width: 40%;
+          border: 1px solid rgba(255, 255, 255, 0.4);
+          border-radius: 10px;
+          outline: none;
+          background-color: rgba(218, 209, 209, 0.522);
+          @include font(400, 16, 1.5, var(--btn-color));
+          transition: all 0.3s ease;
+
+          &::placeholder {
+            color: #eee;
+          }
+
+          &:focus {
+            border-color: #fff;
+            box-shadow: 0 0 6px rgba(255, 255, 255, 0.3);
+          }
+        }
+
+        .btn {
+          width: 40%;
+          padding: 15px;
+          border: none;
+          border-radius: 10px;
+          cursor: pointer;
+          transition: all 0.3s ease;
+          background-color: var(--btn-bg);
+          @include font(600, 16, 1.5, var(--btn-color));
+
+          &:hover {
+            background-color: var(--btn-hover-bg);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+          }
+
+          &:active {
+            transform: translateY(0);
+            box-shadow: none;
+          }
+        }
+      }
+
+      .info {
+        @include font(400, 14, 1.6, var(--btn-color));
+        opacity: 0.8;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+@media( max-width:1200px){
+  .offer {
+    padding: 45px 0;
+
+    .container {
+      padding: 30px  20px; 
+      display: flex;
+      align-items: center;
+
+      .offer__img {
+        width: 40%;
+        margin-bottom: 20px;
+
+        img {
+          width: 100%;
+          display: block;
+          object-fit: cover;
+        }
+      }
+
+      .desc {
+        width: 60%;
+        display: flex;
+        gap: 20px;
+
+        .title {
+          @include font(700, 33, 1.3, var(--btn-color));
+        }
+
+        .text {
+          @include font(400, 19, 1.5, var(--extra-color));
+        }
+
+        .buttons {
+          display: flex;
+          gap: 20px;
+
+          .tell,
+          .btn {
+            width: 48%;
+          }
+        }
+
+        .info {
+          @include font(400, 16, 1.6, var(--btn-color));
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+@media( max-width:990px){
+  .offer {
+    padding: 40px 0;
+
+    .container {
+      padding:  20px; 
+      display: flex;
+      align-items: center;
+
+      .offer__img {
+        width: 40%;
+        margin-bottom: 20px;
+
+        img {
+          width: 100%;
+          display: block;
+          object-fit: cover;
+        }
+      }
+
+      .desc {
+        width: 60%;
+        display: flex;
+        gap: 20px;
+
+        .title {
+          @include font(700, 30, 1.3, var(--btn-color));
+        }
+
+        .text {
+          @include font(400, 18, 1.5, var(--extra-color));
+        }
+
+        .buttons {
+          display: flex;
+          gap: 20px;
+
+          .tell,
+          .btn {
+            width: 48%;
+          }
+        }
+
+        .info {
+          @include font(400, 16, 1.6, var(--btn-color));
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+@media (max-width: 769px) {
+  .offer {
+    padding: 40px 0;
+
+    .container {
+      padding:  20px; 
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .offer__img {
+        width: 100%;
+        margin-bottom: 20px;
+
+        img {
+          width: 70%;
+          display: block;
+          object-fit: cover;
+        }
+      }
+
+      .desc {
+        width: 100%;
+        display: flex;
+        gap: 20px;
+
+        .title {
+          @include font(700, 28, 1.3, var(--btn-color));
+        }
+
+        .text {
+          @include font(400, 18, 1.5, var(--extra-color));
+        }
+
+        .buttons {
+          display: flex;
+justify-content: space-between;
+          .tell{
+            width: 43%;
+          }
+          .btn {
+            width: 55%;
+          }
+        }
+
+        .info {
+          @include font(400, 16, 1.6, var(--btn-color));
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+@media (max-width: 447px) {
+  .offer {
+    padding: 40px 0;
+
+    .container {
+      padding: 0 20px; 
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .offer__img {
+        width: 100%;
+        margin-bottom: 20px;
+
+        img {
+          width: 100%;
+          display: block;
+          object-fit: cover;
+        }
+      }
+
+      .desc {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .title {
+          @include font(700, 28, 1.3, var(--btn-color));
+        }
+
+        .text {
+          @include font(400, 18, 1.5, var(--extra-color));
+        }
+
+        .buttons {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+
+          .tell,
+          .btn {
+            width: 100%;
+          }
+        }
+
+        .info {
+          @include font(400, 16, 1.6, var(--btn-color));
+        }
+      }
+    }
+  }
+}

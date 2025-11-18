@@ -1,0 +1,191 @@
+@import '../../../Varibless/Varibles.scss';
+@import '../../../Mixins/Mixin.scss';
+
+.avto-kredit {
+  padding: 40px 0;
+  background: var(--gray);
+  transition: background-color 0.3s ease;
+
+  .container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 30px 40px;
+    background: var(--bg-color);
+    border-radius: 25px;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.05);
+  }
+
+  .title {
+    @include font(700, 28, 1.3, var(--text-color));
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .card-wrp {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .card {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 23%;
+    gap: 10px;
+    background: var(--main-bg);
+    border-radius: 18px;
+    padding: 30px 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: default;
+    margin-bottom: 30px;
+overflow: hidden;
+    &:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    }
+
+    &__img {
+      width: 120px;
+      height: 90px;
+      object-fit: contain;
+    }
+
+    &__text {
+      @include font(500, 16, 1.5, var(--text-color));
+      overflow: hidden;
+    }
+  }
+
+  /* =========================
+     RESPONSIVE MEDIA QUERIES
+     ========================= */
+
+  /* 1200px dan kichik ekranlar uchun */
+  @media (max-width: 1200px) {
+    .title {
+      font-size: 26px;
+    }
+    .card {
+      width: 23%;
+      &__img {
+        width: 100px;
+        height: 80px;
+      }
+      &__text {
+        font-size: 15px;
+      }
+    }
+  }
+
+  /* 992px dan kichik (planshet) ekranlar uchun */
+  @media (max-width: 990px) {
+    .container {
+      padding: 25px;
+    }
+    .title {
+      font-size: 24px;
+      margin-bottom: 30px;
+    }
+
+    .card-wrp {
+      justify-content: center; /* markazdan joylashadi */
+      gap: 25px; /* bir xil oraliq */
+    }
+
+    .card {
+      width: 30%; /* 3 ta qatorga */
+      padding: 25px 18px;
+      margin: 0; /* chetlardan teng */
+      &__img {
+        width: 80px;
+        height: 70px;
+      }
+      &__text {
+        font-size: 15px;
+        line-height: 1.4;
+      }
+    }
+  }
+
+  /* 768px dan kichik ekranlar uchun */
+  @media (max-width: 768px) {
+    .container {
+      padding: 20px;
+      border-radius: 20px;
+    }
+    .title {
+      font-size: 22px;
+      margin-bottom: 25px;
+    }
+    .card-wrp {
+      justify-content: center;
+      gap: 20px;
+    }
+    .card {
+      width: 45%; /* 2 ta card yonma-yon */
+      padding: 22px 15px;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+
+      &__img {
+        width: 90px;
+        height: 70px;
+      }
+
+      &__text {
+        font-size: 15px;
+        margin-top: 10px;
+      }
+    }
+  }
+
+  /* 576px dan kichik ekranlar uchun */
+  @media (max-width: 576px) {
+    padding: 30px 0;
+    .container {
+      padding: 15px;
+    }
+    .title {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+    .card-wrp {
+      justify-content: center;
+      gap: 15px;
+    }
+    .card {
+      width: 45%;
+      padding: 18px 12px;
+      &__img {
+        width: 85px;
+        height: 60px;
+      }
+      &__text {
+        font-size: 14px;
+      }
+    }
+  }
+
+  /* 400px dan kichik ekranlar uchun */
+  @media (max-width: 447px) {
+    .title {
+      font-size: 18px;
+    }
+    .card {
+      width: 100%;
+      padding: 15px 10px;
+      margin-bottom: 10px;
+      &__img {
+        width: 80px;
+        height: 55px;
+      }
+      &__text {
+        font-size: 13px;
+      }
+    }
+  }
+}

@@ -1,0 +1,520 @@
+@import "../../../Varibless/Varibles.scss";
+@import "../../../Mixins/Mixin.scss";
+
+.naliche {
+
+  padding: 0;
+background-color: var(--bg-color);
+  .container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 50px 20px;
+
+    .naliche__title {
+      @include font(600, 36, 44px, var(--text-color));
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .naliche__cards {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 50px 0 30px 0 0px;
+
+      .naliche__card {
+        width: 32%;
+        margin-bottom: 35px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 16px;
+        padding: 20px;
+        cursor: pointer;
+        background: var(--main-bg);
+        transition: all 0.3s ease;
+
+        &:hover {
+          box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+          transform: translateY(-5px);
+        }
+
+        .card__top {
+          display: flex;
+          margin-bottom: 5px;
+          align-items: flex-start;
+          gap: 30px;
+
+          .card__title {
+            @include font(600, 27, 33px, var(--text-color));
+          }
+
+          .top__icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+
+            .fa-heart {
+              font-size: 24px;
+              color: var(--btn-bg);
+              cursor: pointer;
+              transition: all 0.3s ease;
+
+              &:hover {
+                background: var(--btn-bg);
+                color: transparent;
+                -webkit-mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><path fill='white' d='M462.3 62.7C407 7.6 324.8-10.6 256 39.8 187.2-10.6 105 7.6 49.7 62.7c-61.9 61.9-66.1 165.9-10 230.8l193.5 199.8c12 12.4 28.3 18.7 44.8 18.7s32.8-6.3 44.8-18.7l193.5-199.8c56.1-64.9 51.9-168.9-10-230.8z'/></svg>");
+                -webkit-mask-repeat: no-repeat;
+                -webkit-mask-size: contain;
+                -webkit-mask-position: center;
+              }
+            }
+
+            .fa-chart-simple {
+              font-size: 20px;
+              color: var(--text-color);
+              cursor: pointer;
+            }
+          }
+        }
+
+        .btn1-wrp {
+          display: flex;
+          align-items: center;
+
+          .car__btn1 {
+            width: 200px;
+            padding: 10px 0;
+            background: var(--btn-bg);
+            border-radius: 5px 30px 30px 5px;
+            @include font(600, 18, 22px, var(--btn-color));
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+
+            &:hover {
+              background: var(--btn-hover-bg);
+            }
+          }
+
+          .card__btn2 {
+            width: 100px;
+            padding: 10px 0;
+            background: var(--main-bg);
+            border-radius: 5px;
+            @include font(600, 18, 22px, var(--text-color));
+            cursor: pointer;
+            margin-left: 10px;
+            transition: all 0.3s ease;
+
+            &:hover {
+              color: var(--btn-bg);
+            }
+          }
+        }
+
+        .card__center {
+          display: flex;
+          align-items: center;
+          padding: 20px 0;
+          background-image: url("src/Images/Png/1059 2.jpg");
+          background-size: cover;
+          background-position: center;
+          border-radius: 10px;
+          margin: 5px 0;
+          overflow: hidden;
+
+          .items {
+            width: 150px;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+
+            .item {
+              display: flex;
+              gap: 10px;
+margin-left: 5px;
+              .fa-gift {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 18px;
+                width: 30px;
+                height: 30px;
+                border-radius: 50px;
+                background-color: var(--black);
+                color: var(--btn-color);
+              }
+
+              .text {
+                display: flex;
+                flex-direction: column;
+                @include font(400, 12, 14px, var(--text-color));
+
+                span {
+                  color: var(--btn-bg);
+                }
+              }
+            }
+          }
+
+          .naliche__img {
+            width: 220px;
+            margin-top: 90px;
+          }
+        }
+
+        .pices {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin: 10px 0;
+
+          .price {
+            @include font(600, 20, 21px, var(--text-color));
+          }
+
+          .kredit__price {
+            @include font(400, 16, 18px, var(--subtitle-color));
+          }
+        }
+
+        .characteristics {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin: 15px 0 10px 0;
+
+          .about {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            width: 24%;
+            border: 1px solid #C4C4C4;
+            padding: 4px;
+            border-radius: 6px;
+            height: 30px;
+            transition: all 0.2s ease;
+
+            &:hover {
+              border: 1px solid var(--text-color);
+            }
+
+            .about__img {
+              width: 16px;
+            }
+
+            .text {
+              @include font(450, 14, 16px, var(--text-color));
+            }
+          }
+        }
+
+        .bottom-wrap {
+          display: flex;
+          background: transparent;
+          padding: 15px 0 10px 0;
+
+          .bottom-btns {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            border-radius: 8px;
+            overflow: hidden;
+
+            .btn {
+              flex: 1;
+              padding: 12px 0;
+              @include font(700, 16, 20px, #fff);
+              border: none;
+              cursor: pointer;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              transition: background 0.15s ease;
+            }
+
+            .btn1 {
+              width: 40%;
+              background: var(--btn-bg);
+              clip-path: polygon(0 0, calc(100% - 22px) 0, 100% 50%, calc(100% - 22px) 100%, 0 100%);
+
+              &:hover {
+                background: var(--btn-hover-bg);
+              }
+            }
+
+            .btn2 {
+              width: 33%;
+              background: #1a1a1a;
+              margin-left: -22px;
+              margin-right: -22px;
+              text-align: center;
+
+              &:hover {
+                background: #2c2c2c;
+              }
+            }
+
+            .btn3 {
+              width: 27%;
+              background: #8b8b8b;
+              margin-left: -22px;
+              margin-right: -22px;
+              clip-path: polygon(20px 0, 100% 0, 100% 100%, 20px 100%, 0 50%);
+
+              &:hover {
+                background: #9a9a9a;
+              }
+            }
+          }
+        }
+      }
+    }
+    .naliche__btn {
+      display: block;
+      margin: 0 auto 50px auto;
+      padding: 15px 70px;
+      background: var(--btn-bg);
+      border-radius: 30px;
+      @include font(600, 18, 22px, var(--btn-color));
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background: var(--btn-hover-bg);
+      }
+    }
+  }
+}
+
+
+
+
+
+
+@media(max-width:1200px){
+  .naliche {
+  .container {
+    padding: 40px 20px;
+
+    .naliche__title {
+      @include font(600, 33, 44px, var(--text-color));
+      margin-bottom: 25px;
+    }
+
+    .naliche__cards {
+      padding: 40px 0 30px  0px;
+
+      .naliche__card {
+        width: 47%;
+        .card__top {
+          .card__title {
+            @include font(600, 26, 1.2, var(--text-color));
+          }
+
+          .top__icon {
+            .fa-heart {
+              font-size: 24px;
+            }
+          }
+        }
+
+        .btn1-wrp {
+          display: flex;
+          align-items: center;
+
+          .car__btn1 {
+            width: 200px;
+            @include font(600, 19, 22px, var(--btn-color));
+          }
+
+          .card__btn2 {
+            width: 100px;
+            @include font(600, 19, 22px, var(--text-color));
+          }
+        }
+
+        .card__center {
+
+          .naliche__img {
+            width: 200px;
+          }
+        }
+
+        .pices {
+          .price {
+            @include font(500, 18, 1.2, var(--text-color));
+          }
+
+          .kredit__price {
+            @include font(400, 15, 1.2, var(--subtitle-color));
+          }
+        }
+
+        .characteristics {
+          .about {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            width: 24%;
+
+            .about__img {
+              width: 14px;
+            }
+
+            .text {
+              @include font(400, 11, 1.1, var(--text-color));
+            }
+          }
+        }
+
+        .bottom-wrap {
+          .bottom-btns {
+            .btn {
+              @include font(700, 15, 20px, #fff);
+            }
+
+            .btn1 {
+              width: 40%;
+            }
+
+            .btn2 {
+              width: 33%;
+            }
+
+            .btn3 {
+              width: 27%;
+            }
+          }
+        }
+      }
+    }
+    .naliche__btn {
+      padding: 15px 50px;
+      @include font(600, 18, 22px, var(--btn-color));
+
+    }
+  }
+}
+
+}
+
+
+
+
+
+
+
+
+
+@media(max-width:768px){
+  .naliche {
+  .container {
+    padding: 30px 20px;
+
+    .naliche__title {
+      @include font(600, 25, 44px, var(--text-color));
+      margin-bottom: 20px;
+    }
+
+    .naliche__cards {
+      padding: 30px 0 30px  0px;
+
+      .naliche__card {
+        width: 100%;
+        .card__top {
+          .card__title {
+            @include font(600, 23, 1.2, var(--text-color));
+          }
+
+          .top__icon {
+            .fa-heart {
+              font-size: 22px;
+            }
+          }
+        }
+
+        .btn1-wrp {
+          display: flex;
+          align-items: center;
+
+          .car__btn1 {
+            width: 200px;
+            @include font(600, 18, 22px, var(--btn-color));
+          }
+
+          .card__btn2 {
+            width: 100px;
+            @include font(600, 18, 22px, var(--text-color));
+          }
+        }
+
+        .card__center {
+
+          .naliche__img {
+            width: 200px;
+          }
+        }
+
+        .pices {
+          .price {
+            @include font(500, 18, 1.2, var(--text-color));
+          }
+
+          .kredit__price {
+            @include font(400, 15, 1.2, var(--subtitle-color));
+          }
+        }
+
+        .characteristics {
+          .about {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            width: 24%;
+
+            .about__img {
+              width: 14px;
+            }
+
+            .text {
+              @include font(400, 11, 1.1, var(--text-color));
+            }
+          }
+        }
+
+        .bottom-wrap {
+          .bottom-btns {
+            .btn {
+              @include font(700, 15, 20px, #fff);
+            }
+
+            .btn1 {
+              width: 40%;
+            }
+
+            .btn2 {
+              width: 33%;
+            }
+
+            .btn3 {
+              width: 27%;
+            }
+          }
+        }
+      }
+    }
+    .naliche__btn {
+      padding: 15px 50px;
+      @include font(600, 18, 22px, var(--btn-color));
+
+    }
+  }
+}
+
+}

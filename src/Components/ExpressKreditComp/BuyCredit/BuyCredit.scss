@@ -1,0 +1,335 @@
+@import '../../../Varibless/Varibles.scss';
+@import '../../../Mixins/Mixin.scss';
+
+.buycredit {
+  padding: 60px 0;
+  background-color: var(--gray);
+  transition: background-color 0.3s ease;
+
+  .container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 30px;
+    background: var(--bg-color);
+    border-radius: 25px;
+  }
+
+  .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: var(--main-bg);
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+
+    .left {
+      width: 45%;
+      flex: 1;
+
+      .title {
+        font-size: 22px;
+        color: var(--text-color);
+        margin-bottom: 20px;
+      }
+
+      .range {
+        width: 100%;
+
+        .year {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 15px;
+
+          .text {
+            color: var(--subtitle-color);
+          }
+
+          .text1 {
+            font-weight: bold;
+            color: var(--btn-bg);
+          }
+        }
+
+        .input-parce {
+          width: 100%;
+          appearance: none;
+          height: 6px;
+          background: linear-gradient(10deg, #64a3e8, #00ff33);
+          border-radius: 3px;
+          outline: none;
+          margin-bottom: 10px;
+          cursor: pointer;
+
+          &::-webkit-slider-thumb {
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            background: #007bff;
+            border-radius: 50%;
+            border: 2px solid #fff;
+            transition: 0.2s;
+          }
+
+          &::-webkit-slider-thumb:hover {
+            transform: scale(1.2);
+            background: #0056b3;
+          }
+        }
+
+        .numbers {
+          display: flex;
+          justify-content: space-between;
+          padding-top: 5px;
+
+          .number {
+            font-size: 14px;
+            color: #999;
+            transition: all 0.3s ease;
+
+            &.active {
+              color: #007bff;
+              font-weight: 600;
+              transform: scale(1.2);
+            }
+          }
+        }
+      }
+    }
+
+    .right {
+      margin-left: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 50%;
+
+      .checks {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .discount,
+        .useful {
+          display: flex;
+          align-items: center;
+          margin-bottom: 45px;
+
+          .check {
+            margin-right: 10px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 2px solid #999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+          }
+
+          p {
+            color: var(--text-color);
+            font-size: 15px;
+          }
+        }
+      }
+
+      .payment {
+        padding: 15px 20px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        outline: none;
+        transition: border 0.2s ease;
+
+        &:focus {
+          border-color: #007bff;
+        }
+      }
+    }
+  }
+
+  .bottom {
+    width: 100%;
+
+    .title {
+      font-size: 22px;
+      color: var(--text-color);
+      margin-bottom: 20px;
+    }
+
+    .cards {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 15px;
+
+      .card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 10%;
+        min-width: 100px;
+        height: 50px;
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        transition: transform 0.3s ease;
+
+        &:hover {
+          transform: translateY(-5px);
+        }
+
+        img {
+          width: 50%;
+          height: 80%;
+          object-fit: contain;
+          border-radius: 8px;
+        }
+      }
+    }
+  }
+
+  /* ======================
+     ✅ RESPONSIVE MEDIA 
+     ====================== */
+
+  @media (max-width: 1200px) {
+    padding: 40px 0 !important;
+    .top {
+      .left {
+        width: 50%;
+      }
+
+      .right {
+        width: 45%;
+
+        .discount,
+        .useful {
+          display: flex;
+          align-items: center;
+          margin-bottom: 20px !important;
+        }
+      }
+    }
+
+    .bottom .cards .card {
+      width: 10%;
+    }
+  }
+
+  @media (max-width: 990px) {
+    padding: 25px 0 !important;
+    .top {
+      flex-direction: column;
+      align-items: stretch;
+
+      .left,
+      .right {
+        width: 100%;
+        margin: 0 0 25px 0;
+      }
+    }
+
+    .bottom .cards {
+      justify-content: center;
+      gap: 20px;
+
+      .card {
+        width: 22%;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 20px 0 !important;
+    .container {
+      padding: 20px;
+    }
+
+    .top {
+      padding: 20px;
+
+      .left .title,
+      .bottom .title {
+        font-size: 20px;
+      }
+
+      .right .checks {
+        flex-direction: column;
+        align-items: flex-start;
+
+        .discount,
+        .useful {
+          margin-bottom: 20px;
+        }
+      }
+    }
+
+    .bottom .cards .card {
+      width: 30%;
+    }
+  }
+
+  @media (max-width: 576px) {
+    padding: 15px 0;
+
+    .container {
+      padding: 15px;
+      border-radius: 16px;
+    }
+
+    .top {
+      padding: 15px;
+      border-radius: 12px;
+
+      .left .title {
+        font-size: 18px;
+      }
+
+      .right .payment {
+        padding: 10px;
+        font-size: 14px;
+      }
+    }
+
+    .bottom {
+      .title {
+        font-size: 18px;
+        text-align: center;
+      }
+
+      .cards {
+        justify-content: center;
+
+        .card {
+          width: 30%;
+          height: 45px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 447px) {
+    padding: 10px 0 !important;
+    .top {
+      .left .title,
+      .bottom .title {
+        font-size: 16px;
+      }
+
+      .right .payment {
+        font-size: 13px;
+      }
+    }
+
+    .bottom .cards .card {
+      width: 45%;
+      height: 40px;
+    }
+  }
+}

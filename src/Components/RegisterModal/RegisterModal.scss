@@ -1,0 +1,223 @@
+@import '../../Varibless/Varibles.scss';
+
+.register-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+  animation: fadeIn 0.3s ease-out;
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
+
+.register-modal {
+  position: relative;
+  background: var(--bg-color);
+  border-radius: 20px;
+  padding: 40px;
+  max-width: 500px;
+  width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  animation: slideUp 0.4s ease-out;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(50px) scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+
+  .close-modal-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: var(--text-color);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    font-size: 18px;
+
+    &:hover {
+      background: rgba(255, 95, 95, 0.2);
+      color: #ff5f5f;
+      transform: rotate(90deg);
+    }
+  }
+
+  .modal-header {
+    text-align: center;
+    margin-bottom: 25px;
+
+    h2 {
+      color: var(--text-color);
+      font-size: 26px;
+      font-weight: 700;
+      margin: 0 0 8px 0;
+    }
+
+    p {
+      color: var(--subtitle-color);
+      font-size: 14px;
+      margin: 0;
+    }
+  }
+
+  .error-message {
+    background: rgba(255, 95, 95, 0.1);
+    border: 1px solid rgba(255, 95, 95, 0.3);
+    color: #ff5f5f;
+    padding: 12px 16px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+
+    i {
+      font-size: 16px;
+    }
+  }
+
+  .modal-form {
+    .form-group {
+      margin-bottom: 18px;
+
+      label {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        color: var(--text-color);
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: 8px;
+
+        i {
+          font-size: 14px;
+          color: var(--btn-bg);
+        }
+      }
+
+      input {
+        width: 100%;
+        padding: 12px 16px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.05);
+        color: var(--text-color);
+        font-size: 15px;
+        outline: none;
+        transition: all 0.3s ease;
+        box-sizing: border-box;
+
+        &:focus {
+          border-color: var(--btn-bg);
+          background: rgba(255, 255, 255, 0.08);
+        }
+
+        &::placeholder {
+          color: var(--subtitle-color);
+        }
+      }
+    }
+
+    .submit-btn {
+      width: 100%;
+      padding: 14px;
+      background: var(--btn-bg);
+      color: var(--white);
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      transition: all 0.3s ease;
+      margin-top: 10px;
+
+      &:hover:not(:disabled) {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      }
+
+      &:active:not(:disabled) {
+        transform: translateY(0);
+      }
+
+      &:disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+      }
+
+      i {
+        font-size: 16px;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 30px 20px;
+    width: 95%;
+
+    .modal-header {
+      h2 {
+        font-size: 22px;
+      }
+
+      p {
+        font-size: 13px;
+      }
+    }
+
+    .modal-form {
+      .form-group {
+        margin-bottom: 16px;
+
+        input {
+          padding: 10px 14px;
+          font-size: 14px;
+        }
+      }
+
+      .submit-btn {
+        padding: 12px;
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+
+
+

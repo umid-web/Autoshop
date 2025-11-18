@@ -1,0 +1,136 @@
+@import '../../../Mixins/Mixin.scss';
+@import '../../../Varibless/Varibles.scss';
+
+.otzivi {
+  padding: 150px 0 0px;
+  background-color: var(--bg-color);
+  transition: all 0.4s ease-in-out;
+
+  .container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    /* 🔗 Yuqori link */
+    .link {
+      margin-bottom: 25px;
+
+      a {
+        @include font(400, 15, 1.6, var(--subtitle-color));
+        text-decoration: none;
+        transition: 0.3s ease;
+
+        &:hover {
+          color: var(--btn-bg);
+        }
+      }
+    }
+
+    /* 🏷 Sarlavha */
+    .title {
+      @include font(700, 32, 1.3, var(--text-color));
+      margin-bottom: 15px;
+      position: relative;
+      display: inline-block;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        width: 100px;
+        height: 3px;
+        background-color: var(--btn-bg);
+        border-radius: 5px;
+      }
+    }
+
+    /* 🔻 Chiziq */
+    hr {
+      border: none;
+      height: 1px;
+      background: var(--extra-color);
+      margin: 20px 0 0;
+      transition: 0.4s ease-in-out;
+    }
+
+    /* 💬 Fikrlar (otzivlar) kartalari */
+    .reviews {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 20px;
+      margin-top: 40px;
+
+      .review-card {
+        background: var(--main-bg);
+        border-radius: 10px;
+        padding: 25px;
+        width: 31%;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        transition: all 0.3s ease;
+
+        &:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .review-text {
+          @include font(400, 15, 1.6, var(--subtitle-color));
+          margin-bottom: 15px;
+        }
+
+        .review-author {
+          @include font(600, 16, 1.5, var(--text-color));
+        }
+      }
+    }
+  }
+
+@media(max-width:990px){
+  padding: 170px 0 0;
+}
+
+
+
+  @media (max-width: 768px) {
+    padding: 80px 0 0;
+
+    .container {
+      .title {
+        @include font(700, 28, 1.3, var(--text-color));
+        text-align: center;
+
+        &::after {
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+
+      .link {
+
+        a {
+          @include font(400, 14, 1.6, var(--subtitle-color));
+        }
+      }
+
+    }
+  }
+
+  @media (max-width: 480px) {
+    padding: 80px 0 0;
+
+    .container {
+      .title {
+        @include font(700, 24, 1.4, var(--text-color));
+      }
+
+      .link a {
+        @include font(400, 13, 1.5, var(--subtitle-color));
+      }
+
+
+    }
+  }
+}
+

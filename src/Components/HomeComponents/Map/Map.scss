@@ -1,0 +1,157 @@
+@import '../../../Mixins/Mixin.scss';
+@import '../../../Varibless/Varibles.scss';
+
+.map {
+  background-color: var(--bg-color) !important;
+  padding: 30px 0;
+
+  .container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .card {
+    width: calc(50% - 20px);
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--gray);
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    padding: 50px 30px;
+    transition: all 0.3s ease;
+    position: relative;
+    box-sizing: border-box;
+
+    &:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    .names-desc-wrapper {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      gap: 20px; // Names va Desc orasidagi bo'shliq
+
+      .names {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        width: 50%;
+
+        .logo {
+          width: 140px;
+          height: auto;
+          object-fit: contain;
+        }
+
+        .text {
+          @include font(600, 18, 1.4, var(--text-color));
+        }
+      }
+
+      .desc {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 50%;
+
+        .parce {
+          @include font(500, 14, 1.4, var(--subtitle-color));
+        }
+
+        .stars {
+          display: flex;
+          gap: 4px;
+
+          i {
+            font-size: 16px;
+            color: var(--yellow);
+            transition: color 0.3s ease;
+          }
+        }
+      }
+    }
+
+    .rating {
+      @include font(600, 16, 1.4, var(--btn-color));
+      position: absolute;
+      right: 25px;
+      top: 25px;
+      background-color: var(--reting-color);
+      padding: 10px 20px;
+      border-radius: 10px;
+    }
+  }
+}
+
+
+
+
+
+@media (max-width: 990px) {
+  .map {
+    .container {
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    .card {
+      width: 100%;
+      padding: 70px 20px 30px;
+
+      .names-desc-wrapper {
+        gap: 15px;
+
+        .names,
+        .desc {
+          width: 50%;
+          .logo{
+            width: 170px;
+          }
+          .text{
+            width: auto;
+            @include font(600, 18, 1.4, var(--text-color));
+          }
+          .parce{
+            @include font(500, 18, 1.4, var(--subtitle-color));}
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+@media (max-width: 560px) {
+  .map {
+    .container {
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    .card {
+      width: 100%;
+      padding: 30px 20px;
+
+      .names-desc-wrapper {
+        flex-direction: column; // Kichik ekranda ustma-ust
+        gap: 15px;
+
+        .names,
+        .desc {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

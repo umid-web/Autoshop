@@ -1,0 +1,241 @@
+@import '../../../Mixins/Mixin.scss';
+@import '../../../Varibless/Varibles.scss';
+
+.familyCar {
+  padding: 80px 0;
+background-color: var(--bg-color);
+  .container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 30px 60px 10px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    color: var(--text-color);
+    transition: background 0.3s ease;
+    overflow: hidden;
+
+    .wrp {
+      max-width: 600px;
+      z-index: 2;
+
+      .title {
+        @include font(700, 38, 1.3, var(--blackk));
+        margin-bottom: 10px;
+      }
+
+      .text {
+        @include font(400, 18, 1.5, var(--black));
+        margin-bottom: 25px;
+      }
+
+      .description {
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+        background-color: transparent;
+
+        .tit {
+          @include font(600, 22, 1.4, var(--black));
+          margin-bottom: 20px;
+        }
+
+        .desc {
+          display: flex;
+          align-items: flex-start;
+          gap: 10px;
+          margin-bottom: 15px;
+
+          i {
+            color: #0eb47e;
+            font-size: 20px;
+            margin-top: 3px;
+          }
+
+          .text {
+            @include font(400, 16, 1.4, var(--subtitle-color));
+          }
+        }
+      }
+    }
+
+    .images {
+      position: relative; // kerak, chunki ichidagi absolute elementlar unga nisbatan joylashadi
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      // overflow: hidden;
+
+      .img1 {
+        width: 280px;
+        position: absolute;
+        right: 350px;
+        top: 150px;
+        z-index: 0;
+        transition: transform 0.3s ease;
+
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
+
+      .img2 {
+        width: 480px;
+        position: relative;
+        bottom: -10px;
+        z-index: 1;
+        transition: transform 0.3s ease;
+
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
+
+  .loading {
+    text-align: center;
+    @include font(500, 20, 1.4, var(--subtitle-color));
+  }
+}
+
+/* ===========================
+   📱 RESPONSIVE DESIGN (TO‘LIQ)
+=========================== */
+
+/* --- Planshetlar uchun (≤1200px) --- */
+@media (max-width: 1200px) {
+  .familyCar {
+    padding: 60px 0;
+
+    .container {
+      padding: 40px 40px 20px;
+
+      .wrp {
+        max-width: 550px;
+
+        .title {
+          font-size: 34px;
+        }
+
+        .text {
+          font-size: 17px;
+        }
+
+        .description {
+          gap: 30px;
+
+          .tit {
+            font-size: 20px;
+          }
+
+          .desc {
+            .text {
+              font-size: 15px;
+            }
+          }
+        }
+      }
+
+      .images {
+        .img1 {
+          width: 240px;
+          right: 280px;
+          top: 130px;
+        }
+
+        .img2 {
+          width: 420px;
+        }
+      }
+    }
+  }
+}
+
+/* --- Kichik planshetlar uchun (≤992px) --- */
+@media (max-width: 990px) {
+  .familyCar {
+    .container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 40px 30px;
+
+      .wrp {
+        max-width: 100%;
+        .title {
+          font-size: 30px;
+        }
+        .text {
+          font-size: 16px;
+        }
+      }
+
+      .images {display: none;
+      }
+    }
+  }
+}
+
+/* --- Mobil ekranlar uchun (≤768px) --- */
+@media (max-width: 768px) {
+  .familyCar {
+    padding: 40px 0;
+
+    .container {
+      padding: 25px 20px;
+
+      .wrp {
+        .title {
+          font-size: 26px;
+        }
+        .text {
+          font-size: 15px;
+        }
+        .description {
+          flex-direction: column;
+          gap: 20px;
+
+          .tit {
+            font-size: 18px;
+          }
+
+          .desc {
+            i {
+              font-size: 18px;
+            }
+            .text {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* --- Juda kichik telefonlar uchun (≤480px) --- */
+@media (max-width: 480px) {
+  .familyCar {
+    padding: 30px 0;
+
+    .container {
+      padding: 20px;
+
+      .wrp {
+        .title {
+          font-size: 22px;
+        }
+        .text {
+          font-size: 14px;
+        }
+      }
+
+    }
+  }
+}
+

@@ -1,0 +1,130 @@
+@import '../../../Varibless/Varibles.scss';
+@import '../../../Mixins/Mixin.scss';
+
+.requirement {
+  padding: 30px 0 50px;
+  background: var(--gray);
+  transition: background-color 0.3s ease;
+
+  .container {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: var(--bg-color);
+    border-radius: 25px;
+    padding: 50px;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.05);
+    flex-wrap: wrap;
+  }
+
+  .conditions-wrp{
+width: 53%;
+  }
+  .documents-wrp {
+ width: 35%;
+  }
+
+  .title {
+    @include font(700, 26, 1.3, var(--text-color));
+    margin-bottom: 30px;
+    text-align: left;
+  }
+
+  /* === Условия покупки === */
+  .conditions {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); // 🔹 2 ustun
+    gap: 20px 40px;
+  }
+
+  /* === Документы === */
+  .documents {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .condition,
+  .document {
+    display: flex;
+    align-items: center;
+    background: var(--extra-color);
+    border-radius: 12px;
+    padding: 15px 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: default;
+
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    i {
+      font-size: 24px;
+      color: var(--reting-color);
+      margin-right: 15px;
+    }
+
+    .text {
+      @include font(500, 16, 1.4, var(--text-color));
+    }
+  }
+
+  /* 🌐 RESPONSIVE */
+  @media (max-width: 1050px) {
+    .container {
+      flex-direction: column;
+      padding: 40px 30px;
+    }
+
+    .conditions-wrp,
+    .documents-wrp {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+
+    .conditions {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px 25px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .conditions {
+      grid-template-columns: 1fr; // 📱 Mobilda 1 ustun
+    }
+  .documents-wrp {
+ margin-top: 30px;
+  }
+    .condition,
+    .document {
+      padding: 12px 18px;
+    }
+
+    .title {
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .container {
+      padding: 25px;
+    }
+
+    .text {
+      font-size: 14px;
+    }
+  .documents-wrp {
+ margin-top: 30px;
+  }
+    .condition,
+    .document {
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+  }
+}
