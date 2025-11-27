@@ -1388,24 +1388,24 @@
   "special_offers": [
     {
       "id": 1,
-      "title": "Утилизация",
+      "title": "Кредит и рассрочка",
       "text": "1,9% по льготной ставке",
-      "img": "src/Images/Png/utilization.png",
-      "link": "#"
+      "img": "src/Images/Png/tradein.png",
+      "link": "/avto-kredit"
     },
     {
       "id": 2,
       "title": "Trade-in",
       "text": "1,9% по льготной ставке",
       "img": "src/Images/Png/tradein.png",
-      "link": "#"
+      "link": "/trade-in"
     },
     {
       "id": 3,
       "title": "Рассрочка",
       "text": "Без переплат до 36 месяцев",
-      "img": "src/Images/Png/installment.png",
-      "link": "/avto-kredit"
+      "img": "src/Images/Png/tradein.png",
+      "link": "/payment-plan"
     }
   ]
 

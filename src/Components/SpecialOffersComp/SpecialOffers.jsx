@@ -26,7 +26,13 @@ const SpecialOffers = () => {
               <div className="overlay">
                 <h2 className="title">{offer.title}</h2>
                 <p className="text">{offer.text}</p>
-                <button className="btn">Узнать больше</button>
+          <button 
+  onClick={() => window.location.href = offer.link} 
+  className="btn"
+>
+  Узнать больше
+</button>
+
               </div>
             </div>
           ))}
